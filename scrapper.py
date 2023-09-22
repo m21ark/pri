@@ -1,9 +1,10 @@
 import pandas as pd
 import os
 from bs4 import BeautifulSoup
+import re
 
 df = pd.DataFrame(columns=['Name', 'Kingdom', 'Phylum',
-                  'Class', 'Order', 'Family', 'Genus', 'Scientific Name', 'Quote'])
+                  'Class', 'Order', 'Family', 'Genus', 'Scientific Name', 'Quote', 'Text'])
 
 
 def parser():
@@ -19,6 +20,7 @@ def parser():
                 file_contents = file.read()
                 file_parser(file_contents, file_name)
                 print(f"File {file_name} parsed.")
+        
 
 
 def add_row(new_row):
@@ -48,7 +50,19 @@ def file_parser(content, file_name):
     except:
         taxum = []
 
-    print(taxum)
+    try:
+        text = soup.find('div', attrs={'id': 'single-animal-text'}).findAll(
+            'p')
+        for i in range(len(text)):
+            text[i] = text[i].text.strip()
+    except:
+        text = []
+
+    pattern = re.compile(r'\s+')
+    cleaned_text = [pattern.sub(' ', s.strip())
+                    for s in text if not s.startswith('©')]
+
+    combined_text = ' '.join(cleaned_text)
 
     # if no taxum found, append empty strings
     if len(taxum) != 7:
@@ -64,7 +78,8 @@ def file_parser(content, file_name):
         'Family': taxum[4],
         'Genus': taxum[5],
         'Scientific Name': taxum[6],
-        'Quote': quote
+        'Quote': quote,
+        'Text': combined_text
     }
 
     add_row(new_row)
