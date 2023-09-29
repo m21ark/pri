@@ -5,7 +5,7 @@ import re
 from collections import defaultdict
 
 df = pd.DataFrame(columns=['Name', 'Kingdom', 'Phylum',
-                  'Class', 'Order', 'Family', 'Genus', 'Scientific Name', 'Quote', 'Text', 'Pairs'])
+                  'Class', 'Order', 'Family', 'Genus', 'Scientific Name', 'Quote', 'Text'])
 
 
 def parser():
@@ -110,13 +110,15 @@ def file_parser(content, file_name):
         'Scientific Name': taxum[6],
         'Quote': quote,
         'Text': combined_text,
-        'Pairs': pairs,
     }
+
+    for attribute, value in pairs:
+        new_row[attribute] = value
 
     add_row(new_row)
 
 
-# parser()
+parser()
 save_csv()
 # print(count_dict)
 print(f"Number of errors: {count_errors}")
