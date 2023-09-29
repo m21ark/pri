@@ -122,7 +122,7 @@ save_csv()
 print(f"Number of errors: {count_errors}")
 
 """
-Diet: 2519
+Diet: 2519    
 Color: 2380
 Skin Type: 2363
 Fun Fact: 2352
