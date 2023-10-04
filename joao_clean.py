@@ -24,7 +24,7 @@ df = pd.read_csv('output.csv')
 def clean_df_column(df_col, mapping):
     # mapping is a tuple of (regex, replacement function)
     # replacement function takes a match object and returns the replacement string
-    for i in range(200): # TODO: change to len(df[column_name])
+    for i in range(200, 400): # TODO: change to len(df[column_name])
         string = str(df_col[i])
         matched = False
         if string != 'nan':
@@ -41,22 +41,32 @@ def clean_df_column(df_col, mapping):
     return df
 
 mapping_lifespan = [
-    (r'(\d+)\s*(to|-|–)\s*(\d+)\s*years', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' years'), # These 4 can simplified, but wait for later decisions
-    (r'(\d+)\s*(to|-|–)\s*(\d+)\s*months', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' months'),
-    (r'(\d+)\s*(to|-|–)\s*(\d+)\s*days', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' days'),
-    (r'(\d+)\s*(to|-|–)\s*(\d+)\s*weeks', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' weeks'),
-    (r'(\d+)\s*(years|months|weeks|days)\s*(to|-|–)\s*(\d+)\s*(years|months|weeks|days)', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' ' + match.group(2)),
-    (r'(U|u)p\s*to\s*(\d+)\s*years', lambda match: str(int(match.group(2))) + ' years'),
+    (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*years?', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' years'), # These 4 can simplified, but wait for later decisions
+    (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*months?', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' months'),
+    (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*days?', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' days'),
+    (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*weeks?', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' weeks'),
+    (r'(\d+)\s*(year|month|week|day)s?\s*(to|-|–)\s*(\d+)\s*(year|month|week|day)s?', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' ' + match.group(2) + 's'),
+    (r'(U|u)p\s*to\s*(\d+)\s*years?', lambda match: str(int(match.group(2))) + ' years'),
     (r'(U|u)p\s*to\s*one\s*year', lambda match: '1 years'),
-    (r'(As long as|can be|About|Around)\s*(\d+)\s*(\+?)\s*(years|months|weeks|days)', lambda match: str(int(match.group(2))) + ' ' + match.group(4)),
-    (r'(\d+)\s*\+\s*(years|months|weeks|days)', lambda match: str(int(match.group(1))) + ' ' + match.group(2)),
-    (r'(\d+)\s*(to|-|–)\s*(\d+)', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' years') # Should be last one
+    (r'(About|Around) one year', lambda match: '1 years'),
+    (r'(Females|Males)\s*:?\s*(\d+)\s*(year|month|week|day)s?\s*\|\s*(Females|Males)\s*:?\s*(\d+)\s*(year|month|week|day)s?', lambda match: str(int((int(match.group(2)) + int(match.group(5))) / 2)) + ' ' + match.group(3) + 's'),
+    (r'(More than|As long as|can be|About|Around)\s*(\d+)\s*(\+?)\s*(year|month|week|day)s?', lambda match: str(int(match.group(2))) + ' ' + match.group(4)+ 's'),
+    (r'(\d+)\s*\+\s*(year|month|week|day)s?', lambda match: str(int(match.group(1))) + ' ' + match.group(2) + 's'),
+    (r'\D*(\d+)\s*(year|month|week|day)s?\D*', lambda match: str(int(match.group(1))) + ' ' + match.group(2) + 's'),  # Watch out with these last ones, since they accept a lot
+    (r'(\d+)\s*(to|-|–)\s*(\d+)', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' years') # Should be the last one
 ]
 
 clean_df_column(df['Lifespan'], mapping_lifespan)
 
 # Problemas:
-# 144. 3 weeks - I year
+# 5. Several Months
+# 20. 23 years in the wild, up to 60 years in captivity
+# 24. 6 weeks - 1 year and 144. 3 weeks - I year
+# 27. Varies
+# 282. Hair
+# 298. Unknown
+# 349. 0.6 mph
+# 382. A few weeks
 
 
         
