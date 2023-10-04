@@ -17,14 +17,14 @@ import re
 # read the output.csv file
 df = pd.read_csv('output.csv')
 
-# print the unique values of the column Lifespan
+
 #print(df['Lifespan'][:40])
 
 
 def clean_df_column(df_col, mapping):
     # mapping is a tuple of (regex, replacement function)
     # replacement function takes a match object and returns the replacement string
-    for i in range(200, 400): # TODO: change to len(df[column_name])
+    for i in range(50): # TODO: change to len(df[column_name])
         string = str(df_col[i])
         matched = False
         if string != 'nan':
@@ -56,7 +56,7 @@ mapping_lifespan = [
     (r'(\d+)\s*(to|-|–)\s*(\d+)', lambda match: str(int((int(match.group(1)) + int(match.group(3))) / 2)) + ' years') # Should be the last one
 ]
 
-clean_df_column(df['Lifespan'], mapping_lifespan)
+# clean_df_column(df['Lifespan'], mapping_lifespan)
 
 # Problemas:
 # 5. Several Months
@@ -68,11 +68,33 @@ clean_df_column(df['Lifespan'], mapping_lifespan)
 # 349. 0.6 mph
 # 382. A few weeks
 
-
-        
-        
-
-
-
 #print(df['Lifespan'].unique())
+
+
+# print(df['Weight'][:40])
+
+def getWeight(int1, dec1, int2, dec2):
+    if dec1 == None:
+        dec1 = 0
+    if dec2 == None:
+        dec2 = 0
+    if type(dec1) == str:
+        dec1 = dec1.replace(',', '.')
+    if type(dec2) == str:
+        dec2 = dec2.replace(',', '.')
+    return ((float(int1) + float(dec1)) + (float(int2) + float(dec2))) / 2
+
+
+mapping_weight = [
+    (r'\D*(\d+)(.\d+)?\s*kg\s*(to|-|–)\s*(\d+)(.\d+)?\s*kg', lambda match: str(getWeight(match.group(1), match.group(2), match.group(4), match.group(5))) + ' kg'),
+    (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*kg', lambda match: str(getWeight(match.group(1), match.group(2), match.group(4), match.group(5))) + ' kg'),
+
+]
+
+clean_df_column(df['Weight'], mapping_weight)
+        
+        
+
+
+
 
