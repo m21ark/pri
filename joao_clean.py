@@ -24,7 +24,7 @@ df = pd.read_csv('output.csv')
 def clean_df_column(df_col, mapping):
     # mapping is a tuple of (regex, replacement function)
     # replacement function takes a match object and returns the replacement string
-    for i in range(50): # TODO: change to len(df[column_name])
+    for i in range(1,200): # TODO: change to len(df[column_name])
         string = str(df_col[i])
         matched = False
         if string != 'nan':
@@ -73,7 +73,7 @@ mapping_lifespan = [
 
 # print(df['Weight'][:40])
 
-def getWeight(int1, dec1, int2, dec2, avg = True):
+def getValue(int1, dec1, int2, dec2, avg = True):
     if int1 == None:
         int1 = 0
     if int2 == None:
@@ -95,21 +95,21 @@ def getWeight(int1, dec1, int2, dec2, avg = True):
 
 def convert_to_kg(unit, int1, dec1, int2, dec2, avg=True):
     if unit == 'kg' or unit == 'kilograms' or unit == 'kilogram':
-        return str(round(getWeight(int1, dec1, int2, dec2, avg), 3)) + ' kg'
+        return str(round(getValue(int1, dec1, int2, dec2, avg), 3)) + ' kg'
     elif unit == 'g':
-        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.001, 6)) + ' kg'
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.001, 6)) + ' kg'
     elif unit == 'mg':
-        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.000001, 6)) + ' kg'
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.000001, 6)) + ' kg'
     elif unit == 'pounds' or unit == 'lbs' or unit == 'pound' or unit == 'lb':
-        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.453592, 3)) + ' kg'
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.453592, 3)) + ' kg'
     elif unit == 'ounces' or unit == 'ounce' or unit == 'oz':
-        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.0283495, 6)) + ' kg'
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.0283495, 6)) + ' kg'
     return '0 kg'
 
 
 mapping_weight = [
     (r'\s*(\d+)?(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds|lbs|ounces)?\s*(to|-|–)\s*(\d+)?(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(7), match.group(1), match.group(2), match.group(5), match.group(6))),
-    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than)\s*(\d+)(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(4), match.group(2), match.group(3), 0, 0, False)),
+    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than|[Aa]pproximately)\s*(\d+)(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(4), match.group(2), match.group(3), 0, 0, False)),
     (r'\s*(\d+)(.\d+|,\d+)?\s*\+?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(3), match.group(1), match.group(2), 0, 0, False)),
 
 ]
@@ -123,12 +123,71 @@ mapping_weight = [
 
 # print(df['Length'][:40])
 
-mapping_length = [
+def convert_to_m(unit, int1, dec1, int2, dec2, avg=True):
+    if unit == 'm' or unit == 'meters' or unit == 'meter':
+        return str(round(getValue(int1, dec1, int2, dec2, avg), 3)) + ' m'
+    elif unit == 'cm' or unit == 'centimeters' or unit == 'centimeter':
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.01, 6)) + ' m'
+    elif unit == 'ft' or unit == 'feet' or unit == 'foot':
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.3048, 3)) + ' m'
+    elif unit == 'in' or unit == 'inches' or unit == 'inch':
+        return str(round(getValue(int1, dec1, int2, dec2, avg) * 0.0254, 6)) + ' m'
+    return '0 m'
 
+mapping_length = [
+    (r'\s*\D*(\d+)?(.\d+|,\d+)?\s*(m|meters?|cm|centimeters?|ft|foot|feet|in|inch|inches)?\s*(to|-|–)\s*(\d+)?(.\d+|,\d+)?\s*(m|meters?|cm|centimeters?|ft|foot|feet|in|inch|inches)', lambda match: convert_to_m(match.group(7), match.group(1), match.group(2), match.group(5), match.group(6))),
+    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than|[Aa]pproximately)\s*(\d+)(.\d+|,\d+)?\s*(m|meters?|cm|centimeters?|ft|foot|feet|in|inch|inches)', lambda match: convert_to_m(match.group(4), match.group(2), match.group(3), 0, 0, False)),
+    (r'\s*(\d+)(.\d+|,\d+)?\s*\+?\s*(m|meters?|cm|centimeters?|ft|foot|feet|in|inch|inches)', lambda match: convert_to_m(match.group(3), match.group(1), match.group(2), 0, 0, False)),
 ]
 
-clean_df_column(df['Length'], mapping_length)
+# clean_df_column(df['Length'], mapping_length)
+
+# Problemas:
+# 87. 25kg - 48kg
+# 108. Varies
+# 115. Fish
+# 120. Nose to tail length
+# 123. 20+ Years
+
+# clean_df_column(df['Height'], mapping_length)
+
+# Problemas:
+# 123. Sea Otters, Humans, Larger Fish (Including Larger Char)
+
+# clean_df_column(df['Wingspan'], mapping_length)
+
+def convert_to_unit(unit1, unit2, int1, dec1, int2, dec2, avg=True):
+    value1 = 0
+    value2 = 0
+    if unit1 == 'million' or unit1 == 'millions':
+        value1 = getValue(int1, dec1, 0, 0, False) * 1000000
+    elif unit1 == 'thousand' or unit1 == 'thousands':
+        value1 = getValue(int1, dec1, 0, 0, False) * 1000
+    else:
+        value1 = getValue(int1, dec1, 0, 0, False)
+
+    if avg:
+        if unit2 == 'million' or unit2 == 'millions':
+            value2 = getValue(int2, dec2, 0, 0, False) * 1000000
+        elif unit2 == 'thousand' or unit2 == 'thousands':
+            value2 = getValue(int2, dec2, 0, 0, False) * 1000
+        else:
+            value2 = getValue(int2, dec2,0 ,0 ,False)
+        return str(round((value1 + value2) / 2, 0))
+    
+    else:
+        return str(round(value1, 0))
 
 
+mapping_count = [
+    (r'\s*\D*(\d+)?(,\d+)?\s*(millions?|thousands?)?\s*(to|-|–)\s*(\d+)?(,\d+)?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(3), match.group(7), match.group(1), match.group(2), match.group(5), match.group(6))),
+    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than|[Aa]pproximately)\s*(\d+)(,\d+)?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(4), '', match.group(2), match.group(3), 0, 0, False)),
+    (r'\s*(\d+)(,\d+)?\s*\+?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(3), '', match.group(1), match.group(2), 0, 0, False)),
+]
 
+clean_df_column(df['Average Spawn Size'], mapping_count)
 
+# Problemas:
+# 139. Several thousand
+# 156. bristly hairs that contain venom
+# 172. No
