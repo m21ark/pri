@@ -38,7 +38,7 @@ def clean_df_column(df_col, mapping):
             if not matched:
                 print(i, 'Not Matched: ', string, flush=True)
     
-    return df
+    return df_col
 
 mapping_lifespan = [
     (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*years?', lambda match: str(int((int(match.group(1)) + int(match.group(4))) / 2)) + ' years'), # These 4 can simplified, but wait for later decisions
@@ -192,7 +192,7 @@ mapping_count = [
 # 156. bristly hairs that contain venom
 # 172. No
 
-clean_df_column(df['Estimated Population Size'], mapping_count)
+# clean_df_column(df['Estimated Population Size'], mapping_count)
 
 # Problemas:
 # 15. and 16. Abundant
@@ -200,3 +200,35 @@ clean_df_column(df['Estimated Population Size'], mapping_count)
 # 123. Artic char is the northern-most fish
 # 174. Millions. Conservation status of many of these geckos is least concern
 
+
+
+# 4 Binário
+# Migratory: 222   ------>  É só um 1. Acrescentar 0 a todos os outros que faltam, para colocar em todos os animais.
+# Venomous: 784    ------> É só um Sim. Trocar todos para 1 e 0.
+
+# print(df['Migratory'].unique()[:40])
+
+
+# Replace all nan with 0
+df['Migratory'] = df['Migratory'].fillna(0)
+
+# Replace all nan with 0
+df['Venomous'] = df['Venomous'].fillna(0)
+
+df['Venomous'] = df['Venomous'].replace('Yes', 1)
+df['Venomous'] = df['Venomous'].replace('No', 0)
+
+
+
+# When you want to save it all to the file
+
+# df['Lifespan'] = clean_df_column(df['Lifespan'], mapping_lifespan)
+# df['Weight'] = clean_df_column(df['Weight'], mapping_weight)
+# df['Length'] = clean_df_column(df['Length'], mapping_length)
+# df['Height'] = clean_df_column(df['Height'], mapping_length)
+# df['Wingspan'] = clean_df_column(df['Wingspan'], mapping_length)
+# df['Average Spawn Size'] = clean_df_column(df['Average Spawn Size'], mapping_count)
+# df['Estimated Population Size'] = clean_df_column(df['Estimated Population Size'], mapping_count)
+
+
+# df.to_csv('output_new.csv', index=False)
