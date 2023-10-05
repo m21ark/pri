@@ -42,5 +42,36 @@ df = pd.read_csv('output.csv')
 # Urgente FALAR SOBRE VALORES ERRADOS principalmente na location
 # chat gpt ajuda a encontrar erros
 
+#print(len(df['Other Name(s)'].unique()))
+#print a name that is not nan on Other Name(s) and is not nan on Common Name
+#l = df[(df['Other Name(s)'].notnull()) & (df['Common Name'].notnull())]
+#print(l['Other Name(s)'])
+#print(l['Common Name'])
+
+# print every unique value of Other Name(s) that is contained in Common Name
+# print(df[df['Other Name(s)'].isin(df['Common Name'])]['Other Name(s)'].unique())
+#x = df[df['Common Name'].isin(df['Other Name(s)'])]['Other Name(s)'].unique()
+
+# replace all the values on x for a empty string
+#df['Common Name'] = df['Common Name'].replace(x, '')
+
+#df['Other Name(s)'] = df['Other Name(s)'].fillna(df['Common Name'])
+
+#replace all nan with the empty string
+#df['Other Name(s)'] = df['Other Name(s)'].fillna('')
+#df['Common Name'] = df['Common Name'].fillna('')
+
+# concat the 2 columns string separated by a comma
+#df['Other Name(s)'] = df['Other Name(s)'].fillna(df['Common Name']).astype(str) + ', ' + df['Common Name'].fillna(df['Other Name(s)']).astype(str)
+
+#print(df['Other Name(s)'].unique())
+
+#print(len(df['Other Name(s)'].unique()))
+
+
+# print all the slogans that also have a fun fact
+print(df[df['Slogan'].notnull() & df['Fun Fact'].notnull()]['Slogan'].unique())
+print(df[df['Slogan'].notnull() & df['Fun Fact'].notnull()]['Fun Fact'].unique())
+
 #df.to_csv('output.csv', index=False)
 
