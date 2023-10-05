@@ -172,14 +172,12 @@ mapping_lifespan = [
 
 ]
 
-#clean_location()
-#clean_slogan()
+clean_location()
+clean_slogan()
 
 print(len(df['Age of Sexual Maturity'].unique()))
 
 clean_interval(df['Age of Sexual Maturity'], mapping_lifespan)
-
-
 
 
 
