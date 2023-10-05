@@ -180,14 +180,23 @@ def convert_to_unit(unit1, unit2, int1, dec1, int2, dec2, avg=True):
 
 
 mapping_count = [
-    (r'\s*\D*(\d+)?(,\d+)?\s*(millions?|thousands?)?\s*(to|-|–)\s*(\d+)?(,\d+)?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(3), match.group(7), match.group(1), match.group(2), match.group(5), match.group(6))),
-    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than|[Aa]pproximately)\s*(\d+)(,\d+)?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(4), '', match.group(2), match.group(3), 0, 0, False)),
-    (r'\s*(\d+)(,\d+)?\s*\+?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(3), '', match.group(1), match.group(2), 0, 0, False)),
+    (r'\s*(\d+)?(.\d+|,\d+)?\s*(millions?|thousands?)?\s*(to|-|–)\s*(\d+)?(.\d+|,\d+)?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(3), match.group(7), match.group(1), match.group(2), match.group(5), match.group(6))),
+    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than|[Mm]ore than|[Aa]pproximately)\s*(\d+)(.\d+|,\d+)?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(4), '', match.group(2), match.group(3), 0, 0, False)),
+    (r'\s*(\d+)(.\d+|,\d+)?\s*\+?\s*(millions?|thousands?)?', lambda match: convert_to_unit(match.group(3), '', match.group(1), match.group(2), 0, 0, False)),
 ]
 
-clean_df_column(df['Average Spawn Size'], mapping_count)
+# clean_df_column(df['Average Spawn Size'], mapping_count)
 
 # Problemas:
 # 139. Several thousand
 # 156. bristly hairs that contain venom
 # 172. No
+
+clean_df_column(df['Estimated Population Size'], mapping_count)
+
+# Problemas:
+# 15. and 16. Abundant
+# 90. 20,700 metric tons
+# 123. Artic char is the northern-most fish
+# 174. Millions. Conservation status of many of these geckos is least concern
+
