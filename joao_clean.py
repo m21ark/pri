@@ -31,12 +31,12 @@ def clean_df_column(df_col, mapping):
             for regex, replacement in mapping:
                 match = re.match(regex, string)
                 if match:
-                    print(i, 'Matched: ', df_col[i], ' to: ', replacement(match))
+                    print(i, 'Matched: ', df_col[i], ' to: ', replacement(match), flush=True)
                     df_col[i] = replacement(match)
                     matched = True
                     break
             if not matched:
-                print(i, 'Not Matched: ', string)
+                print(i, 'Not Matched: ', string, flush=True)
     
     return df
 
@@ -73,27 +73,61 @@ mapping_lifespan = [
 
 # print(df['Weight'][:40])
 
-def getWeight(int1, dec1, int2, dec2):
+def getWeight(int1, dec1, int2, dec2, avg = True):
+    if int1 == None:
+        int1 = 0
+    if int2 == None:
+        int2 = 0
     if dec1 == None:
         dec1 = 0
     if dec2 == None:
         dec2 = 0
-    if type(dec1) == str:
-        dec1 = dec1.replace(',', '.')
-    if type(dec2) == str:
-        dec2 = dec2.replace(',', '.')
-    return ((float(int1) + float(dec1)) + (float(int2) + float(dec2))) / 2
+    if str(dec1).startswith(','):
+        int1 = str(int1) + str(dec1)[1:]
+        dec1 = 0
+    if str(dec2).startswith(','):
+        int2 = str(int2) + str(dec2)[1:]
+        dec2 = 0
+    if avg:
+        return ((float(int1) + float(dec1)) + (float(int2) + float(dec2))) / 2
+    else:
+        return float(int1) + float(dec1)
+
+def convert_to_kg(unit, int1, dec1, int2, dec2, avg=True):
+    if unit == 'kg' or unit == 'kilograms' or unit == 'kilogram':
+        return str(round(getWeight(int1, dec1, int2, dec2, avg), 3)) + ' kg'
+    elif unit == 'g':
+        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.001, 6)) + ' kg'
+    elif unit == 'mg':
+        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.000001, 6)) + ' kg'
+    elif unit == 'pounds' or unit == 'lbs' or unit == 'pound' or unit == 'lb':
+        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.453592, 3)) + ' kg'
+    elif unit == 'ounces' or unit == 'ounce' or unit == 'oz':
+        return str(round(getWeight(int1, dec1, int2, dec2, avg) * 0.0283495, 6)) + ' kg'
+    return '0 kg'
 
 
 mapping_weight = [
-    (r'\D*(\d+)(.\d+)?\s*kg\s*(to|-|–)\s*(\d+)(.\d+)?\s*kg', lambda match: str(getWeight(match.group(1), match.group(2), match.group(4), match.group(5))) + ' kg'),
-    (r'\D*(\d+)(.\d+)?\s*(to|-|–)\s*(\d+)(.\d+)?\s*kg', lambda match: str(getWeight(match.group(1), match.group(2), match.group(4), match.group(5))) + ' kg'),
+    (r'\s*(\d+)?(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds|lbs|ounces)?\s*(to|-|–)\s*(\d+)?(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(7), match.group(1), match.group(2), match.group(5), match.group(6))),
+    (r'\s*([Uu]p to|About|Around|As much as|can be|[Ll]ess than)\s*(\d+)(.\d+|,\d+)?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(4), match.group(2), match.group(3), 0, 0, False)),
+    (r'\s*(\d+)(.\d+|,\d+)?\s*\+?\s*(kg|kilograms?|g|oz|mg|pounds?|lbs?|ounces?)', lambda match: convert_to_kg(match.group(3), match.group(1), match.group(2), 0, 0, False)),
 
 ]
 
-clean_df_column(df['Weight'], mapping_weight)
+#clean_df_column(df['Weight'], mapping_weight)
         
-        
+# Problemas:
+# 108. longer for humans
+# 123. 1.16mph
+
+
+# print(df['Length'][:40])
+
+mapping_length = [
+
+]
+
+clean_df_column(df['Length'], mapping_length)
 
 
 
