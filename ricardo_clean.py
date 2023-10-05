@@ -120,7 +120,7 @@ def clean_interval(df_col, mapping):
     # r'\b(?:centimeters)\b',
     #regex that identifies lbs mph and ft etc
     regex_l = [
-        'lbs', 'mph', ' ft ', 'cm', 'kg', 'inches', 'feet', 'pounds', 'miles per hour', 'centimeters',
+        'lbs', 'mph', ' ft ', 'cm', 'kg', 'inches', 'feet', 'pounds', 'miles per hour', 'centimeters', 'ounces'
 
         ]
 
@@ -131,7 +131,7 @@ def clean_interval(df_col, mapping):
             for regex, replacement in mapping:
                 match = re.match(regex, string)
                 if match:
-                   # print(i, 'Matched: ', df_col[i], ' to: ', replacement(match), flush=True)
+                    # print(i, 'Matched: ', df_col[i], ' to: ', replacement(match), flush=True)
                     df_col[i] = replacement(match)
                     matched = True
                     break
@@ -172,13 +172,19 @@ mapping_lifespan = [
 
 ]
 
-clean_location()
-clean_slogan()
+#clean_location()
+#clean_slogan()
 
 print(len(df['Age of Sexual Maturity'].unique()))
 
-clean_interval(df['Age of Sexual Maturity'], mapping_lifespan)
+#clean_interval(df['Age of Sexual Maturity'], mapping_lifespan)
 
+clean_interval(df['Age of Weaning'], mapping_lifespan)
+clean_interval(df['Age Of Independence'], mapping_lifespan)
+clean_interval(df['Age of Molting'], mapping_lifespan)
+clean_interval(df['Age Of Fledgling'], mapping_lifespan)
+clean_interval(df['Gestation Period'], mapping_lifespan)
+clean_interval(df['Incubation Period'], mapping_lifespan)
 
 
 #df.to_csv('output.csv', index=False)
