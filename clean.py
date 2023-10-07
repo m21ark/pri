@@ -437,7 +437,7 @@ def clean_text():
 def drop_columns():
     global df
     try:
-        df = df.drop(['Group', 'Average Litter Size', 'Litter Size'
+        df = df.drop(['Group', 'Average Litter Size', 'Litter Size',
                     'Training', 'Number Of Species'], axis=1)
     except:
         # It was already cleaned previously
