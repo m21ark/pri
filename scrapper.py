@@ -31,7 +31,7 @@ def add_row(new_row):
 
 def save_csv():
     global df
-    df.to_csv('output.csv', index=False)
+    df.to_csv('output_utf.csv', index=False, encoding='utf-8')
 
 
 count_dict = defaultdict(int)
