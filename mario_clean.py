@@ -17,19 +17,32 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
     pd.DataFrame: processed dataframe
     """
 
+    if('Aggression' not in df.columns):
+        return 'Aggression column not in the df'
+    
+    if('Temperament' not in df.columns):
+        return 'Temperament column not in the df'
+    
+    if('Group Behavior' not in df.columns):
+        return 'Group Behavior column not in the df'
+
     df_aux = pd.DataFrame()
+
+    df['Aggression'] = df['Aggression'].fillna('')
+    df['Group Behavior'] = df['Group Behavior'].fillna('')
+    df['Temperament'] = df['Temperament'].fillna('')
 
     # Aggression
     def parse_aggression(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
         return f"Their aggression level is {elem.lower()}."
 
     df['Aggression'] = df['Aggression'].apply(parse_aggression)
-
+    
     # Group Behavior
     def parse_group_behavior(elem):
-        if(pd.isna(elem)): return elem
+        if(not elem): return elem
 
         return '/'.join([sentence.strip().lower() for sentence in elem.split('\n') if sentence.strip()])
 
@@ -38,7 +51,7 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
     are_group = ['social', 'sociable', 'territorial', 'gregarious', 'solitary', 'community-minded', 'subsocial']
 
     def split_group_behaviors(sentence):
-        if(pd.isna(sentence)): return None, None
+        if(not sentence): return '', ''
         fragments = sentence.split('/')
 
         are_sentences = []
@@ -50,14 +63,14 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
             else:
                 other_sentences.append(f)
         
-        return '/'.join(are_sentences) if len(are_sentences) > 0 else None, '/'.join(other_sentences) if len(other_sentences) > 0 else None
+        return '/'.join(are_sentences) if len(are_sentences) > 0 else '', '/'.join(other_sentences) if len(other_sentences) > 0 else ''
 
     df_aux[['Group_are', 'Group_live']] = df['Group Behavior'].apply(split_group_behaviors).apply(pd.Series)
 
     def remove_similar_behaviors(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
-        unique = set([x for x in elem.split('/') if pd.notna(elem)])
+        unique = set([x for x in elem.split('/')])
 
         if(any(behavior in ['largely solitary', 'mainly solitary'] for behavior in unique)):
             unique.discard('solitary')
@@ -71,7 +84,6 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
             elif('mainly solitary' in unique):
                 unique.discard('mainly solitary')
                 unique = {'mainly solitary except during mating season' if x == 'solitary except during mating season' else x for x in unique}
-
 
         return '/'.join(unique)
 
@@ -88,7 +100,7 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
     }
         
     def transform_live_behaviors(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return ''
         
         transformed = []
         for u in [x for x in elem.split('/')]:
@@ -107,7 +119,7 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
 
 
     def build_sentence_live(elem):
-        if(pd.isna(elem)): return ''
+        if(not elem): return elem
 
         fragments = elem.split('/')
 
@@ -122,7 +134,7 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
         return f"They usually live in {result}"
 
     def build_sentence_are(elem):
-        if(pd.isna(elem)): return ''
+        if(not elem): return elem
 
         fragments = elem.split('/')
 
@@ -137,7 +149,7 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
         return f" and can be characterized as {result}."
 
     def format_sentence(elem):
-        if(elem == ''): return None
+        if(not elem): return elem
         
         if(elem.split(' ')[1] == "and"):
             return f"They {' '.join(elem.split(' ')[2:])}"
@@ -152,13 +164,10 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
     df['Group Behavior'] = df_aux['Group_live']  + df_aux['Group_are'] 
     df['Group Behavior'] = df['Group Behavior'].apply(format_sentence)
 
-    #df = df.drop(['Group_are', 'Group_live'], axis=1)
-
     # Temperament
 
     def custom_split(text):
-        if pd.isna(text):
-            return ''
+        if (not text): return ''
 
         sentences = text.split('.')
         result = []
@@ -169,19 +178,13 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
 
     df['Temperament'] = df['Temperament'].apply(custom_split)
     df['Temperament'] = df['Temperament'].str.lower()
-    df['Temperament'] = df['Temperament'].str.replace(r'/+', '/', regex=True)
-    df['Temperament'] = df['Temperament'].str.strip('/')
-
-    df['Temperament'] = df['Temperament'].str.replace(r'\bthey are \b', '', regex=True)
-    df['Temperament'] = df['Temperament'].str.replace(r'\bcan be \b', '', regex=True)
-    df['Temperament'] = df['Temperament'].str.replace(r'\b hens\b', '', regex=True)
-    df['Temperament'] = df['Temperament'].str.replace(r'\b roosters\b', '', regex=True)
-    df['Temperament'] = df['Temperament'].str.replace(r'\bswedish elkhounds are \b', '', regex=True)
-    df['Temperament'] = df['Temperament'].str.replace(r'\bwelsh black cattle are \b', '', regex=True)
-    df['Temperament'] = df['Temperament'].str.replace(r'\bthey \b', '', regex=True)
+    df['Temperament'] = df['Temperament'].str.replace(r'/+', '/', regex=True).str.strip('/')
+    df['Temperament'] = df['Temperament'].str\
+        .replace(r'\bthey are \b|\bcan be \b|\b hens\b|\b roosters\b|\bswedish elkhounds are \b|\bwelsh black cattle are \b|\bthey \b'\
+                , '', regex=True)
 
     def custom_join(text):
-        if(text == ''): return ''
+        if(not text): return ''
         fragments = text.split('/')
 
         result = fragments[0]
@@ -203,6 +206,7 @@ def clean_aggression_groupbehavior_temperament(df: pd.DataFrame) -> pd.DataFrame
 
     # Joinning
     df['Behavior'] = df['Group Behavior'] + df['Temperament'] + df['Aggression']
+    df['Behavior'] = df['Behavior'].str.strip()
 
     df = df.drop(columns=['Group Behavior', 'Temperament', 'Aggression'], axis=1)
 
@@ -219,24 +223,16 @@ def clean_topspeed(df: pd.DataFrame) -> pd.DataFrame:
     Returns;
     pd.DataFrame: processed dataframe
     """
+    df['Top Speed'] = df['Top Speed'].fillna('0 mph')
 
     def convert_mph_to_kmh(mph_value):
-        if(pd.isna(mph_value)):
-            return None
-        
-        try:
-            # Extract the numerical value (x) from the mph string
-            mph = float(mph_value.split(" ")[0])
-            # Convert mph to km/h (1 mph = 1.60934 km/h)
-            kmh = mph * 1.60934
-            return abs(kmh)
-        except ValueError:
-            # Handle any invalid or non-numeric values gracefully
-            return None
+        # Extract the numerical value (x) from the mph string
+        mph = float(mph_value.split(" ")[0])
+        # Convert mph to km/h (1 mph = 1.60934 km/h)
+        kmh = mph * 1.60934
+        return abs(kmh)
 
-    # Apply the conversion function to the 'Speed' column and create a new 'Speed (km/h)' column
     df['Top Speed'] = df['Top Speed'].apply(convert_mph_to_kmh)
-    
     return df
 
 def clean_color_skintype(df: pd.DataFrame) -> pd.DataFrame:
@@ -251,6 +247,9 @@ def clean_color_skintype(df: pd.DataFrame) -> pd.DataFrame:
     pd.DataFrame: processed dataframe
     """
 
+    df['Skin Type'] = df['Skin Type'].fillna('')
+    df['Color'] = df['Color'].fillna('')
+
     df['Skin Type'] = df['Skin Type'].str.lower()
 
     skin_type_is = ['permeable', 'leather', 'smooth', 'rough', 'tough', 'porous', 'spiky']
@@ -263,7 +262,7 @@ def clean_color_skintype(df: pd.DataFrame) -> pd.DataFrame:
     }
 
     def transform_skin_type(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
         if elem in skin_type_is:
             return f"This animal's skin is {elem}."
@@ -280,7 +279,7 @@ def clean_color_skintype(df: pd.DataFrame) -> pd.DataFrame:
     df['Color'] = df['Color'].str.replace(r'\s+', '/', regex=True)
 
     def remove_duplicates_colours(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
         return '/'.join([x for x in set(elem.split('/')) if pd.notna(elem)])
 
@@ -289,7 +288,7 @@ def clean_color_skintype(df: pd.DataFrame) -> pd.DataFrame:
     df['Color'] = df['Color'].str.replace(r'.*Multi-colored.*', 'Multi-colored', regex=True).str.lower()
 
     def build_sentence_body_color(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
         fragments = elem.split('/')
 
@@ -325,11 +324,12 @@ def clean_habitat_nestingplace(df: pd.DataFrame) -> pd.DataFrame:
     Returns;
     pd.DataFrame: processed dataframe
     """
-
+    df['Nesting Location'] = df['Nesting Location'].fillna('')
     df['Natural Habitat'] = df['Habitat'].fillna(df['Nesting Location']).str.lower()
 
+
     def format_habitat(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
         items = re.split(r', | and ', elem)
         result = items[0]
@@ -358,13 +358,14 @@ def clean_lifestyle(df: pd.DataFrame) -> pd.DataFrame:
     Returns;
     pd.DataFrame: processed dataframe
     """
-        
+    df['Lifestyle'] = df['Lifestyle'].fillna('')
+    
     df['Lifestyle'] = df['Lifestyle'].str.replace(r'\s+', '/', regex=True).str.lower()
 
     lifestyle_keywords = ["region", "animal", "constant", "or", "and", "on", "day", "night", "region", "depending"]
 
     def remove_lifestyle_keywords(row):
-        if(pd.isna(row)): return None
+        if(not row): return row
         words = row.split('/')
 
         filtered_words = [word for word in words if word not in lifestyle_keywords]
@@ -374,7 +375,7 @@ def clean_lifestyle(df: pd.DataFrame) -> pd.DataFrame:
     df['Lifestyle'] = df['Lifestyle'].apply(remove_lifestyle_keywords)
 
     def build_sentence_lifestyle(elem):
-        if(pd.isna(elem)): return None
+        if(not elem): return elem
 
         items = elem.split('/')
         result = items[0]
