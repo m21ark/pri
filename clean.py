@@ -6,6 +6,123 @@ import re
 df = pd.read_csv('output.csv')
 
 
+def clean_text():
+    global df
+    # if NaN, replace with empty string
+    df = df.replace(np.nan, '', regex=True)
+
+    # remove all quotes, \n, and trailing spaces
+    df = df.replace(r'\"', '', regex=True)
+    df = df.replace('"', '', regex=False)
+    df = df.replace(r'\n', '', regex=True)
+    df = df.replace(r'\s+$', '', regex=True)
+
+    return df
+
+
+
+def drop_columns():
+    global df
+    try:
+        df = df.drop(['Group', 'Average Litter Size', 'Litter Size'
+                    'Training', 'Number Of Species'], axis=1)
+    except:
+        # It was already cleaned previously
+        print('Columns already dropped')
+        pass
+    return df
+
+
+
+def join_food_cols(df):
+    food_columns = ['Diet', 'Diet for this Fish', 'Prey', 'Favorite Food',
+                    'Main Prey']
+    
+    # Check if the columns exist
+    for col in food_columns:
+        if col not in df.columns:
+            print('Column ' + col + ' does not exist')
+            return df
+
+    phrase_mapping = {
+        'Diet': '',
+        'Diet for this Fish': '',
+        'Prey': 'and eats',
+        'Main Prey': 'and especially likes',
+        'Favorite Food': 'and enjoys',
+    }
+
+    # iterate over all rows
+    for index, row in df.iterrows():
+        food = ''
+        UsedThat = False
+
+        for col in food_columns:
+            if food.find('.') != -1:
+                food = food.replace('.', '')
+            if not pd.isna(row[col]) and row[col] != '':
+                val = row[col].lower()
+                if col == 'Diet' or col == 'Diet for this Fish':
+                    val = val.capitalize()
+                    if food.find(val) == -1:
+                        food += f'{phrase_mapping[col]} {val} '
+                elif food == "" and (col != 'Diet' and col != 'Diet for this Fish'):
+                    food += f'Eats {val} '
+                elif (food.find('that') == -1) and not UsedThat and (col != 'Diet' and col != 'Diet for this Fish'):
+                    val = val.replace("they eat", '')
+                    food += f'{phrase_mapping[col].replace("and", "that")} {val} '
+                    UsedThat = True
+                else:
+                    # Add the food if it is not already in the string
+
+                    if food.find(val) == -1:
+
+                        for word in val.replace(',', '').split():
+
+                            if food.find(word) != -1:
+                                val = val.replace(word, '')
+
+                        val = val.strip()
+                        if val != '' and not val.isspace() and not val.lower() == 'and':
+                            # if val starts with a comma, remove it
+                            if val[0] == ',':
+                                val = val[1:]
+
+                            # if it starts with "and", remove it
+                            if val[0:3] == 'and':
+                                val = val[3:]
+
+                            food += f'{phrase_mapping[col]} {val} '
+
+        if food.find('that') == -1 and food != '' and food.find('eats') == -1 and food.find('Eats') == -1 and food.find('and') == -1:
+            food += 'with no preference'
+
+        # Remove consecutive commas with spaces
+        food = re.sub(r'(, *)+,', ',', food)
+
+        # remove trailing space
+        food = food.strip()
+
+        # If ends with a comma, remove it
+        if food:
+            if food[-1] == ',':
+                food = food[:-1]
+
+        # if ends with "and", remove it
+        if food:
+            if food[-4:] == ' and':
+                food = food[:-4]
+
+        food = food.replace('possibly', '')
+
+        df.loc[index, 'Diet'] = re.sub(' +', ' ', food)
+
+    # drop all left food columns
+    df = df.drop(['Prey', 'Favorite Food', 'Main Prey',
+                 'Diet for this Fish'], axis=1)
+    return df
+
+
 def clean_ph():
     global df
 
@@ -154,7 +271,7 @@ def clean_interval(df_col, mapping, regex_l=[]):
                     matched = True
                     break
             if not matched:
-                print(i, 'Not Matched: ', string, flush=True)
+                # print(i, 'Not Matched: ', string, flush=True)
 
                 for x in regex_l:
                     #match = re.findall(x, string)
@@ -182,6 +299,13 @@ def getValue(int1, dec1, int2, dec2, avg = True):
         dec1 = 0
     if str(dec2).startswith(','):
         int2 = str(int2) + str(dec2)[1:]
+        dec2 = 0
+    if str(dec1).startswith('/'):
+        int1 = float(int1) / float(str(dec1)[1:])
+        dec1 = 0
+    if str(dec2).startswith('/'):
+        print('Print: ', int2, '/', dec2)
+        int2 = float(int2) / float(str(dec2)[1:])
         dec2 = 0
     if avg:
         return ((float(int1) + float(dec1)) + (float(int2) + float(dec2))) / 2
@@ -283,6 +407,10 @@ mapping_count = [
 ]
 
 
+clean_text()
+drop_columns()
+
+join_food_cols(df)
 
 clean_ph()
 clean_feature()
