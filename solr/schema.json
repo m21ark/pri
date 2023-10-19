@@ -1,39 +1,47 @@
 {
-  "add-field-type": [
-    {
-      "name": "animalName",
-      "class": "solr.TextField",
-      "indexAnalyzer": {
-        "tokenizer": {
-          "class": "solr.StandardTokenizerFactory"
-        },
-        "filters": [
-          {
-            "class": "solr.ASCIIFoldingFilterFactory",
-            "preserveOriginal": true
+    "add-field-type": [
+      {
+        "name": "generalTextField",
+        "class": "solr.TextField",
+        "indexAnalyzer": {
+          "tokenizer": {
+            "class": "solr.StandardTokenizerFactory"
           },
-          { "class": "solr.LowerCaseFilterFactory" }
-        ]
-      },
-      "queryAnalyzer": {
-        "tokenizer": {
-          "class": "solr.StandardTokenizerFactory"
+          "filters": [
+            {
+              "class": "solr.ASCIIFoldingFilterFactory",
+              "preserveOriginal": true
+            },
+            { "class": "solr.LowerCaseFilterFactory" }
+          ]
         },
-        "filters": [
-          {
-            "class": "solr.ASCIIFoldingFilterFactory",
-            "preserveOriginal": true
+        "queryAnalyzer": {
+          "tokenizer": {
+            "class": "solr.StandardTokenizerFactory"
           },
-          { "class": "solr.LowerCaseFilterFactory" }
-        ]
+          "filters": [
+            {
+              "class": "solr.ASCIIFoldingFilterFactory",
+              "preserveOriginal": true
+            },
+            { "class": "solr.LowerCaseFilterFactory" }
+          ]
+        }
       }
-    }
-  ],
-  "add-field": [
-    {
-      "name": "Name",
-      "type": "animalName",
-      "indexed": true
-    }
-  ]
-}
+    ],
+    "add-field": [
+      {
+        "name": "Name",
+        "type": "generalTextField",
+        "indexed": true
+      },
+      {
+        "name": "Text",
+        "type": "generalTextField",
+        "indexed": true
+      }
+
+
+    ]
+  }
+  
