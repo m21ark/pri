@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script expects a container started with the following command. In the ANIMAL-EXPLORATION directory
+# This script expects a container started with the following command. In the ANIMAL-EXPLORATION directory run the following command before running this script(only one time)):
 # docker run -p 8983:8983 --name animal_exploration_solr -v ${PWD}:/home -d solr:9.3 solr-precreate animals
 
 docker start animal_exploration_solr
