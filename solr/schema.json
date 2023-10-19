@@ -1,33 +1,39 @@
 {
-	"add-field-type": [
-        {
-            "name":"animalName",
-            "class":"solr.TextField",
-            "indexAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
-                },
-                "filters":[
-                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
-                ]
-            },
-            "queryAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
-                },
-                "filters":[
-                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
-                ]
-            }
-        }
-    ],
-    "add-field": [
-        {
-            "name": "Name",
-            "type": "animalName",
-            "indexed": true
-        }
-    ]
+  "add-field-type": [
+    {
+      "name": "animalName",
+      "class": "solr.TextField",
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          { "class": "solr.LowerCaseFilterFactory" }
+        ]
+      },
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          { "class": "solr.LowerCaseFilterFactory" }
+        ]
+      }
+    }
+  ],
+  "add-field": [
+    {
+      "name": "Name",
+      "type": "animalName",
+      "indexed": true
+    }
+  ]
 }
