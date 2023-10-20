@@ -25,6 +25,7 @@ curl -X POST -H 'Content-type:application/json' \
 # Populate collection using mapped path inside container.
 docker exec -it animal_exploration_solr bin/post -c animals /home/data/output_clean.csv
 
+#sed -i -e 's/\r$//' scriptname.sh
 echo "Press Enter to stop the container..."
 read -r dummy_var
 

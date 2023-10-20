@@ -39,8 +39,13 @@
         "name": "Text",
         "type": "generalTextField",
         "indexed": true
+      },
+      {
+        "name": "Average_Spawn_Size",
+        "type":"generalTextField",
+        "multiValued": false,
+        "stored": true
       }
-
 
     ]
   }
