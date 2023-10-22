@@ -1,52 +1,146 @@
 {
-    "add-field-type": [
-      {
-        "name": "generalTextField",
-        "class": "solr.TextField",
-        "indexAnalyzer": {
-          "tokenizer": {
-            "class": "solr.StandardTokenizerFactory"
-          },
-          "filters": [
-            {
-              "class": "solr.ASCIIFoldingFilterFactory",
-              "preserveOriginal": true
-            },
-            { "class": "solr.LowerCaseFilterFactory" }
-          ]
+  "add-field-type": [
+    {
+      "name": "generalTextField",
+      "class": "solr.TextField",
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
         },
-        "queryAnalyzer": {
-          "tokenizer": {
-            "class": "solr.StandardTokenizerFactory"
+        "filters": [
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
           },
-          "filters": [
-            {
-              "class": "solr.ASCIIFoldingFilterFactory",
-              "preserveOriginal": true
-            },
-            { "class": "solr.LowerCaseFilterFactory" }
-          ]
-        }
-      }
-    ],
-    "add-field": [
-      {
-        "name": "Name",
-        "type": "generalTextField",
-        "indexed": true
+          { "class": "solr.LowerCaseFilterFactory" }
+        ]
       },
-      {
-        "name": "Text",
-        "type": "generalTextField",
-        "indexed": true
-      },
-      {
-        "name": "Average_Spawn_Size",
-        "type":"generalTextField",
-        "multiValued": false,
-        "stored": true
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          { "class": "solr.LowerCaseFilterFactory" }
+        ]
       }
+    },
+    {
+      "name": "numeric_general",
+      "class": "solr.TextField",
+      "analyzer": {
+        "tokenizer": {
+          "class": "solr.KeywordTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.PatternReplaceFilterFactory",
+            "pattern": "[^0-9.]+",
+            "replacement": "",
+            "replace": "all"
+          }
+        ]
+      }
+    }
+  ],
+  "add-field": [
+    {
+      "name": "Name",
+      "type": "text_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Text",
+      "type": "text_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Lifespan",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Average_Spawn_Size",
+      "type": "text_general",
+      "multiValued": false,
+      "stored": true
+    },
+    {
+      "name": "Weight",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Length",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
 
-    ]
-  }
-  
+    {
+      "name": "Gestation_Period",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Top_Speed",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_of_Sexual_Maturity",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_of_Weaning",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_Of_Independence",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+
+    {
+      "name": "Wingspan",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+
+    {
+      "name": "Estimated_Population_Size",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+
+    {
+      "name": "Incubation_Period",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+
+    {
+      "name": "Age_Of_Fledgling",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    }
+  ]
+}
