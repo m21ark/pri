@@ -44,6 +44,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "shortTextField",
+      "class": "solr.TextField",
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          {
+            "class": "solr.BeiderMorseFilterFactory"
+          },
+          {
+            "class": "solr.ClassicTokenizerFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          },
+          {
+            "class": "solr.FlattenGraphFilterFactory"
+          }
+        ]
+      },
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          {
+            "class": "solr.BeiderMorseFilterFactory"
+          },
+          {
+            "class": "solr.ClassicTokenizerFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          }
+        ]
+      }
+
     }
   ],
   "add-field": [
@@ -141,6 +197,73 @@
       "type": "numeric_general",
       "indexed": true,
       "stored": true
+    },
+    {
+      "name": "Fun_Fact",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Biggest_Threat",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Other_Name(s)",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Diet",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Lifestyle",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Location",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Predators",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Behavior",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Body",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Natural Habitat",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Features",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
     }
+
   ]
 }
