@@ -3,6 +3,9 @@
     {
       "name": "generalTextField",
       "class": "solr.TextField",
+      "large": true,
+      "stored": true,
+      "multiValued": false,
       "indexAnalyzer": {
         "tokenizer": {
           "class": "solr.StandardTokenizerFactory"
