@@ -5,17 +5,20 @@ command -v python3 >/dev/null 2>&1 || { echo >&2 "Python 3 is required but not i
 
 # Input parameters
 json_file=$1
-relevant_animals=$2
+relevant_animals_file=$2
 output_csv=$3
 
 # Check if all required parameters are provided
-if [ -z "$json_file" ] || [ -z "$relevant_animals" ] || [ -z "$output_csv" ]; then
-    echo "Usage: $0 <json_file> <relevant_animals> <output_csv>"
+if [ -z "$json_file" ] || [ -z "$relevant_animals_file" ] || [ -z "$output_csv" ]; then
+    echo "Usage: $0 <json_file> <relevant_animals_file> <output_csv>"
     exit 1
 fi
 
 # Read JSON file using Python and extract animal names
 animals=$(python3 -c "import json; data = json.load(open('$json_file')); print(','.join([animal['Name'] for animal in data]))")
+
+# Read relevant animals from the file using Python
+relevant_animals=$(python3 -c "with open('$relevant_animals_file') as f: print(','.join([line.strip() for line in f]))")
 
 # Calculate metrics
 metrics_data=""
