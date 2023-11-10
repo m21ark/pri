@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision, Recall, and F-Measure at N Calculator</title>
+</head>
+<body>
+
+    <h1>Precision, Recall, and F-Measure at N Calculator</h1>
+
+    <label for="inputFile">Upload JSON File:</label>
+    <input type="file" id="inputFile" accept=".json">
+
+    <label for="inputRelevantAnimals">List of Relevant Animals (comma-separated):</label>
+    <input type="text" id="inputRelevantAnimals" placeholder="e.g., Lion, Tiger">
+
+    <button onclick="calculateMetrics()">Calculate Metrics</button>
+    <button onclick="exportToCSV()">Export to CSV</button>
+
+    <table border="1">
+        <tr>
+            <th>N</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F-Measure</th>
+        </tr>
+        <tbody id="metricsTableBody"></tbody>
+    </table>
+
+    <script>
+        var metricsData = [];
+        var inputAnimals;
+
+        document.getElementById('inputFile').addEventListener('change', handleFileSelect);
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    inputAnimals = e.target.result;
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function calculateMetrics() {
+            var inputRelevantAnimals = document.getElementById("inputRelevantAnimals").value;
+
+            // Convert the input strings to JSON and arrays
+            var animalsData = JSON.parse(inputAnimals);
+            var animals = animalsData.map(animal => animal.Name);
+            var relevantAnimals = inputRelevantAnimals.split(',').map(item => item.trim());
+
+            // Calculate metrics from 1 to N
+            var metricsTableBody = document.getElementById("metricsTableBody");
+            metricsTableBody.innerHTML = '';
+
+            // Store metrics data for export
+            metricsData = [];
+            for (var i = 1; i <= animals.length; i++) {
+                var subsetAnimals = animals.slice(0, i);
+                var precision = calculatePrecisionAtN(subsetAnimals, relevantAnimals);
+                var recall = calculateRecallAtN(subsetAnimals, relevantAnimals);
+                var fMeasure = calculateFMeasure(precision, recall);
+
+                metricsData.push({
+                    N: i,
+                    Precision: precision.toFixed(2),
+                    Recall: recall.toFixed(2),
+                    FMeasure: fMeasure.toFixed(2)
+                });
+            }
+
+            // Display metrics table
+            var metricsTableBody = document.getElementById("metricsTableBody");
+            metricsTableBody.innerHTML = '';
+            metricsData.forEach(function (data) {
+                var row = metricsTableBody.insertRow(-1);
+                var cellN = row.insertCell(0);
+                var cellPrecision = row.insertCell(1);
+                var cellRecall = row.insertCell(2);
+                var cellFMeasure = row.insertCell(3);
+
+                cellN.innerHTML = data.N;
+                cellPrecision.innerHTML = data.Precision;
+                cellRecall.innerHTML = data.Recall;
+                cellFMeasure.innerHTML = data.FMeasure;
+            });
+        }
+
+        function exportToCSV() {
+            var csvContent = "data:text/csv;charset=utf-8,";
+
+            // Add header
+            csvContent += "N,Precision,Recall,F-Measure\n";
+
+            // Add data
+            metricsData.forEach(function (data) {
+                csvContent += `${data.N},${data.Precision},${data.Recall},${data.FMeasure}\n`;
+            });
+
+            // Create a CSV file and initiate download
+            var encodedUri = encodeURI(csvContent);
+            var link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "metrics.csv");
+            document.body.appendChild(link); // Required for FF
+
+            link.click();
+        }
+
+        function calculatePrecisionAtN(animals, relevantAnimals) {
+            var intersection = animals.filter(animal => relevantAnimals.includes(animal));
+            return intersection.length / animals.length;
+        }
+
+        function calculateRecallAtN(animals, relevantAnimals) {
+            var intersection = animals.filter(animal => relevantAnimals.includes(animal));
+            return intersection.length / relevantAnimals.length;
+        }
+
+        function calculateFMeasure(precision, recall) {
+            return (2 * precision * recall) / (precision + recall);
+        }
+    </script>
+
+</body>
+</html>
