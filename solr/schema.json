@@ -12,7 +12,19 @@
             "class": "solr.ASCIIFoldingFilterFactory",
             "preserveOriginal": true
           },
-          { "class": "solr.LowerCaseFilterFactory" }
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.KStemFilterFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          },
+          {
+            "class": "solr.FlattenGraphFilterFactory"
+          }
         ]
       },
       "queryAnalyzer": {
@@ -24,7 +36,19 @@
             "class": "solr.ASCIIFoldingFilterFactory",
             "preserveOriginal": true
           },
-          { "class": "solr.LowerCaseFilterFactory" }
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.KStemFilterFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          },
+          {
+            "class": "solr.FlattenGraphFilterFactory"
+          }
         ]
       }
     },
@@ -99,22 +123,9 @@
           }
         ]
       }
-
     }
   ],
   "add-field": [
-    {
-      "name": "Name",
-      "type": "text_general",
-      "indexed": true,
-      "stored": true
-    },
-    {
-      "name": "Text",
-      "type": "text_general",
-      "indexed": true,
-      "stored": true
-    },
     {
       "name": "Lifespan",
       "type": "numeric_general",
@@ -139,7 +150,6 @@
       "indexed": true,
       "stored": true
     },
-
     {
       "name": "Gestation_Period",
       "type": "numeric_general",
@@ -170,28 +180,24 @@
       "indexed": true,
       "stored": true
     },
-
     {
       "name": "Wingspan",
       "type": "numeric_general",
       "indexed": true,
       "stored": true
     },
-
     {
       "name": "Estimated_Population_Size",
       "type": "numeric_general",
       "indexed": true,
       "stored": true
     },
-
     {
       "name": "Incubation_Period",
       "type": "numeric_general",
       "indexed": true,
       "stored": true
     },
-
     {
       "name": "Age_Of_Fledgling",
       "type": "numeric_general",
@@ -253,7 +259,7 @@
       "stored": true
     },
     {
-      "name": "Natural Habitat",
+      "name": "Natural_Habitat",
       "type": "shortTextField",
       "indexed": true,
       "stored": true
@@ -263,7 +269,66 @@
       "type": "shortTextField",
       "indexed": true,
       "stored": true
+    },
+    {
+      "name": "Name",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Kingdom",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Phylum",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Class",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Order",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Family",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Genus",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Scientific_Name",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Name_Of_Young",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Text",
+      "type": "generalTextField",
+      "indexed": true,
+      "stored": true
     }
-
   ]
 }
