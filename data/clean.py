@@ -832,7 +832,7 @@ mapping_count = [
 ]
 
 
-clean_text()
+df = clean_text(df)
 drop_columns()
 
 df = clean_aggression_groupbehavior_temperament(df)
