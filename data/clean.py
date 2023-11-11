@@ -419,8 +419,8 @@ def clean_lifestyle(df: pd.DataFrame) -> pd.DataFrame:
 
 
 
-def clean_text():
-    global df
+
+def clean_text(df):
     # if NaN, replace with empty string
     df = df.replace(np.nan, '', regex=True)
 
@@ -428,10 +428,21 @@ def clean_text():
     df = df.replace(r'\"', '', regex=True)
     df = df.replace('"', '', regex=False)
     df = df.replace(r'\n', '', regex=True)
+    df = df.replace(r'\t', '', regex=True)
     df = df.replace(r'\s+$', '', regex=True)
+    
+    # df = df.applymap(lambda x: re.sub(r'["\n\t]+', ' ', str(x)).strip())
+    # df = df.applymap(lambda x: str(x).replace(r'\"', '').replace('"', '').replace(r'\n', '').replace(r'\t', '').rstrip())
+    # df = df.applymap(lambda x: str(x).replace(r'\"', '').replace('"', '').replace(r'\n', '').replace(r'\t', '').strip())
+
+    # remove all quotes, \n, and multiple whitespaces
+    df = df.applymap(lambda x: re.sub(r'["\n\t]+', ' ', str(x)).strip())
+
+    # replace multiple whitespaces with a single space
+    df = df.applymap(lambda x: re.sub(r'\s+', ' ', str(x)))
+
 
     return df
-
 
 
 def drop_columns():
@@ -821,7 +832,7 @@ mapping_count = [
 ]
 
 
-clean_text()
+df = clean_text(df)
 drop_columns()
 
 df = clean_aggression_groupbehavior_temperament(df)
