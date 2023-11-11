@@ -1,5 +1,7 @@
 {
   "params": {
-    "q": "Name:Aardvark"
+    "q": "*:*",
+    "fl": "Name,score",
+    "rows": 30
   }
 }
