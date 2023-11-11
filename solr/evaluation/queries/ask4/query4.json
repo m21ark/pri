@@ -1,6 +1,6 @@
 {
   "params": {
-    "q": "*:*",
+    "q": "Text:territory",
     "rows": "30",
     "fl": "Name,score", 
     "defType": "edismax",

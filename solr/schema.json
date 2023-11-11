@@ -126,7 +126,34 @@
           }
         ]
       }
-    }
+    },
+    {
+      "name": "commaSeparatedText",
+      "class": "solr.TextField",
+      "positionIncrementGap": "100",
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.PatternTokenizerFactory",
+          "pattern": ","
+        },
+        "filters": [
+          {
+            "class": "solr.TrimFilterFactory"
+          }
+        ]
+      },
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.PatternTokenizerFactory",
+          "pattern": ","
+        },
+        "filters": [
+          {
+            "class": "solr.TrimFilterFactory"
+          }
+        ]
+      }
+    }    
   ],
   "add-field": [
     {
@@ -208,6 +235,12 @@
       "stored": true
     },
     {
+      "name": "Average_Clutch_Size",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
       "name": "Fun_Fact",
       "type": "shortTextField",
       "indexed": true,
@@ -245,12 +278,24 @@
     },
     {
       "name": "Predators",
-      "type": "shortTextField",
+      "type": "commaSeparatedText",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Other_Name_s_",
+      "type": "commaSeparatedText",
       "indexed": true,
       "stored": true
     },
     {
       "name": "Behavior",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_of_Molting",
       "type": "shortTextField",
       "indexed": true,
       "stored": true
@@ -304,6 +349,18 @@
       "stored": true
     },
     {
+      "name": "Origin",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Height",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
       "name": "Family",
       "type": "shortTextField",
       "indexed": true,
@@ -324,6 +381,24 @@
     {
       "name": "Name_Of_Young",
       "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Type",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Venomous",
+      "type": "boolean",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Migratory",
+      "type": "boolean",
       "indexed": true,
       "stored": true
     },

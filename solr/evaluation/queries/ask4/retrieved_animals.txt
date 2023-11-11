@@ -1,122 +1,122 @@
 [
   {
-    "Name": "Aardvark",
-    "score": 1
+    "Name": "Vicuna",
+    "score": 1.4526814
   },
   {
     "Name": "Aardwolf",
-    "score": 1
+    "score": 1.4394288
   },
   {
-    "Name": "Abyssinian Guinea Pig",
-    "score": 1
+    "Name": "Wolf",
+    "score": 1.4306798
   },
   {
-    "Name": "Abyssinian",
-    "score": 1
+    "Name": "Dik Dik",
+    "score": 1.4264158
   },
   {
-    "Name": "Acadian Flycatcher",
-    "score": 1
+    "Name": "Eurasian Lynx",
+    "score": 1.4264158
   },
   {
-    "Name": "Achrioptera Manga",
-    "score": 1
+    "Name": "Red Winged Blackbird",
+    "score": 1.4240818
   },
   {
-    "Name": "Ackie Monitor",
-    "score": 1
+    "Name": "Red Squirrel",
+    "score": 1.4162331
   },
   {
-    "Name": "Addax",
-    "score": 1
+    "Name": "Oenpelli Python",
+    "score": 1.4074564
   },
   {
-    "Name": "Adelie Penguin",
-    "score": 1
+    "Name": "Barred Owl",
+    "score": 1.4050596
   },
   {
-    "Name": "Admiral Butterfly",
-    "score": 1
+    "Name": "Apennine Wolf",
+    "score": 1.3874862
   },
   {
-    "Name": "Aesculapian",
-    "score": 1
+    "Name": "Elephant Seal",
+    "score": 1.3874862
   },
   {
-    "Name": "Affenpinscher",
-    "score": 1
+    "Name": "Mink",
+    "score": 1.3874862
   },
   {
-    "Name": "Afghan Hound",
-    "score": 1
+    "Name": "Mountain Lion",
+    "score": 1.3745918
   },
   {
-    "Name": "African Bullfrog",
-    "score": 1
+    "Name": "Common Spotted Cuscus",
+    "score": 1.3743556
   },
   {
-    "Name": "African Bush Elephant",
-    "score": 1
+    "Name": "South China Tiger",
+    "score": 1.3719743
   },
   {
-    "Name": "African Civet",
-    "score": 1
+    "Name": "Darwins Fox",
+    "score": 1.3697245
   },
   {
-    "Name": "African Clawed Frog",
-    "score": 1
+    "Name": "Anole Lizard",
+    "score": 1.3636652
   },
   {
-    "Name": "African Fish Eagle",
-    "score": 1
+    "Name": "Florida Panther",
+    "score": 1.3636652
   },
   {
-    "Name": "African Forest Elephant",
-    "score": 1
+    "Name": "Pronghorn",
+    "score": 1.3509245
   },
   {
-    "Name": "African Golden Cat",
-    "score": 1
+    "Name": "Oribi",
+    "score": 1.3427758
   },
   {
-    "Name": "African Grey Parrot",
-    "score": 1
+    "Name": "Tawny Owl",
+    "score": 1.3427758
   },
   {
-    "Name": "African Jacana",
-    "score": 1
+    "Name": "Eurasian Eagle Owl",
+    "score": 1.3419687
   },
   {
-    "Name": "African Palm Civet",
-    "score": 1
+    "Name": "Ermine",
+    "score": 1.3337946
   },
   {
-    "Name": "African Penguin",
-    "score": 1
+    "Name": "Macgillivrays Warbler",
+    "score": 1.3337946
   },
   {
-    "Name": "African Sugarcane Borer",
-    "score": 1
+    "Name": "Magnolia Warbler",
+    "score": 1.3307357
   },
   {
-    "Name": "African Tree Toad",
-    "score": 1
+    "Name": "Treecreeper",
+    "score": 1.3307357
   },
   {
-    "Name": "African Wild Dog",
-    "score": 1
+    "Name": "Pine Marten",
+    "score": 1.3225169
   },
   {
-    "Name": "Africanized Bee Killer Bee",
-    "score": 1
+    "Name": "Kangaroo Rat",
+    "score": 1.3059533
   },
   {
-    "Name": "Agama Lizard",
-    "score": 1
+    "Name": "Scissor Tailed Flycatcher",
+    "score": 1.3059533
   },
   {
-    "Name": "Agkistrodon Contortrix",
-    "score": 1
+    "Name": "Thrush",
+    "score": 1.3059533
   }
 ]
