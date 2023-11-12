@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Urial",
+    "score": 17.476135
+  },
+  {
+    "Name": "Springbok",
+    "score": 17.354004
+  },
+  {
+    "Name": "English Longhorn Cattle",
+    "score": 17.157475
+  },
+  {
+    "Name": "Zebra",
+    "score": 16.237047
+  },
+  {
+    "Name": "Ox",
+    "score": 16.197567
+  },
+  {
+    "Name": "Elk",
+    "score": 14.783472
+  },
+  {
+    "Name": "Onager",
+    "score": 14.629702
+  },
+  {
+    "Name": "Alpaca",
+    "score": 14.5659685
+  },
+  {
+    "Name": "Vicuna",
+    "score": 14.426372
+  },
+  {
+    "Name": "African Bush Elephant",
+    "score": 14.277903
+  },
+  {
+    "Name": "Mongoose",
+    "score": 14.110504
+  },
+  {
+    "Name": "Brown Hyena",
+    "score": 14.097987
+  },
+  {
+    "Name": "Giraffe",
+    "score": 14.026889
+  },
+  {
+    "Name": "Olive Baboon",
+    "score": 13.909724
+  },
+  {
+    "Name": "Teddy Guinea Pig",
+    "score": 13.854003
+  },
+  {
+    "Name": "Kiang",
+    "score": 13.694279
+  },
+  {
+    "Name": "Collared Peccary",
+    "score": 13.655365
+  },
+  {
+    "Name": "Sichuan Takin Tibetan Takin",
+    "score": 13.620836
+  },
+  {
+    "Name": "Roe Deer",
+    "score": 13.311142
+  },
+  {
+    "Name": "Guinea Pig",
+    "score": 13.29047
+  },
+  {
+    "Name": "Wood Bison",
+    "score": 13.250149
+  },
+  {
+    "Name": "Elephant",
+    "score": 13.148193
+  },
+  {
+    "Name": "Sika Deer",
+    "score": 13.120281
+  },
+  {
+    "Name": "Pronghorn",
+    "score": 13.084162
+  },
+  {
+    "Name": "Capybara",
+    "score": 12.98521
+  },
+  {
+    "Name": "Bhutan Takin",
+    "score": 12.847407
+  },
+  {
+    "Name": "African Forest Elephant",
+    "score": 12.838272
+  },
+  {
+    "Name": "Fallow Deer",
+    "score": 12.785456
+  },
+  {
+    "Name": "Saiga",
+    "score": 12.765969
+  },
+  {
+    "Name": "Quagga",
+    "score": 12.73458
+  }
+]
