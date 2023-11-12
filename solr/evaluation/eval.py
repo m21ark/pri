@@ -24,11 +24,6 @@ QRELS_FILE = sys.argv[1]
 QUERY_URL = sys.argv[2]
 
 
-
-print(f"|{QRELS_FILE}| ; |{QUERY_URL}|")
-
-
-
 # Read qrels to extract relevant documents
 relevant = list(map(lambda el: el.strip(), open(QRELS_FILE).readlines()))
 # Get query results from Solr instance
