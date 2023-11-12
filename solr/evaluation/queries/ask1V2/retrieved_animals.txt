@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Bluetick Coonhound",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "English Foxhound",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Boxsky",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Portuguese Podengo",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Spanador",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Wirehaired Pointing Griffon",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Black Mouth Cur",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Vizsla",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "West Siberian Laika",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Dalmador",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Australian Terrier",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "English Springer Spaniel",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Bracco Italiano",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Basenji Dog",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Boxerdoodle",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Cesky Fousek",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Jagdterrier",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Akita",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Jackabee",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Redbone Coonhound",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Dorgi",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Airedale Terrier",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Russell Terrier",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Mountain Feist",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Comfort Retriever",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Aussiedoodle",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Golden Irish",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Teddy Roosevelt Terrier",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Border Collie",
+    "Genus": "Canis"
+  },
+  {
+    "Name": "Cockalier",
+    "Genus": "Canis"
+  }
+]

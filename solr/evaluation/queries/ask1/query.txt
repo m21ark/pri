@@ -1,8 +1,0 @@
-http://localhost:8983/solr/animals/select?fl=Name%2C%20Genus%2C%20Text%2CLifespan&indent=true&q.op=OR&q=Genus%3ACani%5E3%20AND%0AText%3A(%22hunting%20dog%22~5%20AND%20%22energetic%22)%5E5%0AText%3Ahunt*%0ALifespan%3A%5B10%20TO%20*%5D%5E2&rows=50&useParams=
-
-
-Genus:Cani^3 AND
-Text:("hunting dog"~5 AND "energetic")^5
-Text:hunt*
-
---> 47 entries

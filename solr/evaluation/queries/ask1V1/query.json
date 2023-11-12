@@ -1,0 +1,9 @@
+{
+  "params": {
+    "fl": "Name, Genus",
+    "indent": true,
+    "q.op": "OR",
+    "q": "Genus:Cani^3 AND Text:(\"hunting dog\"~5 AND \"energetic\")^5 Text:hunt*",
+    "rows": 30
+  }
+}
