@@ -17,9 +17,10 @@
       "Text:social*~1^1.5",
       "Text:hierarchy^1.9",
       "Text:\"social structure\"~4^1.5",
-      "Text:territory*^1.5",
-      "Text: \"territorial behavior\"~3^2.0",
-      "Text: \"deal with territory\"~2^2.0"
+      "Text:territory*^2.8",
+      "Text: \"mark territorial\"~3^2.4",
+      "Text: \"territorial behavior\"~3^2.4",
+      "Text: \"deal with territory\"~2^2.4"
     ]
   }
 }

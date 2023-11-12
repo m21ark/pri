@@ -1,0 +1,412 @@
+{
+  "add-field-type": [
+    {
+      "name": "generalTextField",
+      "class": "solr.TextField",
+      "large": true,
+      "stored": true,
+      "multiValued": false,
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.KStemFilterFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          },
+          {
+            "class": "solr.FlattenGraphFilterFactory"
+          }
+        ]
+      },
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.KStemFilterFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          },
+          {
+            "class": "solr.FlattenGraphFilterFactory"
+          }
+        ]
+      }
+    },
+    {
+      "name": "numeric_general",
+      "class": "solr.TextField",
+      "analyzer": {
+        "tokenizer": {
+          "class": "solr.KeywordTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.PatternReplaceFilterFactory",
+            "pattern": "[^0-9.]+",
+            "replacement": "",
+            "replace": "all"
+          }
+        ]
+      }
+    },
+    {
+      "name": "shortTextField",
+      "class": "solr.TextField",
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          {
+            "class": "solr.BeiderMorseFilterFactory"
+          },
+          {
+            "class": "solr.ClassicTokenizerFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          },
+          {
+            "class": "solr.FlattenGraphFilterFactory"
+          }
+        ]
+      },
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.StandardTokenizerFactory"
+        },
+        "filters": [
+          {
+            "class": "solr.LowerCaseFilterFactory"
+          },
+          {
+            "class": "solr.ASCIIFoldingFilterFactory",
+            "preserveOriginal": true
+          },
+          {
+            "class": "solr.BeiderMorseFilterFactory"
+          },
+          {
+            "class": "solr.ClassicTokenizerFactory"
+          },
+          {
+            "class": "solr.ManagedSynonymGraphFilterFactory",
+            "managed": "english"
+          }
+        ]
+      }
+    },
+    {
+      "name": "commaSeparatedText",
+      "class": "solr.TextField",
+      "positionIncrementGap": "100",
+      "indexAnalyzer": {
+        "tokenizer": {
+          "class": "solr.PatternTokenizerFactory",
+          "pattern": ","
+        },
+        "filters": [
+          {
+            "class": "solr.TrimFilterFactory"
+          }
+        ]
+      },
+      "queryAnalyzer": {
+        "tokenizer": {
+          "class": "solr.PatternTokenizerFactory",
+          "pattern": ","
+        },
+        "filters": [
+          {
+            "class": "solr.TrimFilterFactory"
+          }
+        ]
+      }
+    }    
+  ],
+  "add-field": [
+    {
+      "name": "Lifespan",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Average_Spawn_Size",
+      "type": "text_general",
+      "multiValued": false,
+      "stored": true
+    },
+    {
+      "name": "Weight",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Length",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Gestation_Period",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Top_Speed",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_of_Sexual_Maturity",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_of_Weaning",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_Of_Independence",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Wingspan",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Estimated_Population_Size",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Incubation_Period",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_Of_Fledgling",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Average_Clutch_Size",
+      "type": "numeric_general",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Fun_Fact",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Biggest_Threat",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Other_Name(s)",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Diet",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Lifestyle",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Location",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Predators",
+      "type": "commaSeparatedText",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Other_Name_s_",
+      "type": "commaSeparatedText",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Behavior",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Age_of_Molting",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Body",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Natural_Habitat",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Features",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Name",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Kingdom",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Phylum",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Class",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Order",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Origin",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Height",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Family",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Genus",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Scientific_Name",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Name_Of_Young",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Type",
+      "type": "shortTextField",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Venomous",
+      "type": "boolean",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Migratory",
+      "type": "boolean",
+      "indexed": true,
+      "stored": true
+    },
+    {
+      "name": "Text",
+      "type": "generalTextField",
+      "indexed": true,
+      "stored": true
+    }
+  ]
+}

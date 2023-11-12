@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Mongoose",
+    "score": 15.040548
+  },
+  {
+    "Name": "Goat",
+    "score": 14.360458
+  },
+  {
+    "Name": "Cotton Top Tamarin",
+    "score": 14.267882
+  },
+  {
+    "Name": "Harris Hawk",
+    "score": 13.475192
+  },
+  {
+    "Name": "Urial",
+    "score": 12.730983
+  },
+  {
+    "Name": "Grey Mouse Lemur",
+    "score": 12.722147
+  },
+  {
+    "Name": "Desert Wolf",
+    "score": 12.493168
+  },
+  {
+    "Name": "Deer",
+    "score": 12.471122
+  },
+  {
+    "Name": "Ant",
+    "score": 11.827559
+  },
+  {
+    "Name": "Saber Toothed Tiger",
+    "score": 11.431494
+  },
+  {
+    "Name": "Bonobo",
+    "score": 11.278221
+  },
+  {
+    "Name": "Springbok",
+    "score": 11.003093
+  },
+  {
+    "Name": "Woolly Monkey",
+    "score": 11.003093
+  },
+  {
+    "Name": "Dilophosaurus",
+    "score": 10.966617
+  },
+  {
+    "Name": "Collared Peccary",
+    "score": 10.884223
+  },
+  {
+    "Name": "Crab Eating Macaque",
+    "score": 10.884223
+  },
+  {
+    "Name": "Whooping Crane",
+    "score": 10.76062
+  },
+  {
+    "Name": "Belgian Malinois",
+    "score": 10.7218685
+  },
+  {
+    "Name": "Bhutan Takin",
+    "score": 10.704612
+  },
+  {
+    "Name": "Hartebeest",
+    "score": 10.567083
+  },
+  {
+    "Name": "Agama Lizard",
+    "score": 10.451529
+  },
+  {
+    "Name": "Korean Jindo",
+    "score": 10.409662
+  },
+  {
+    "Name": "Lace Monitor",
+    "score": 10.406767
+  },
+  {
+    "Name": "Psittacosaurus",
+    "score": 10.308233
+  },
+  {
+    "Name": "Jacksons Chameleon",
+    "score": 10.247142
+  },
+  {
+    "Name": "Mandrill",
+    "score": 10.182015
+  },
+  {
+    "Name": "Siberian Tiger",
+    "score": 10.156325
+  },
+  {
+    "Name": "Wood Bison",
+    "score": 10.135597
+  },
+  {
+    "Name": "Husky",
+    "score": 10.131494
+  },
+  {
+    "Name": "Sichuan Takin Tibetan Takin",
+    "score": 10.049265
+  }
+]
