@@ -4,6 +4,8 @@ Bigfin Reef Squid
 Chameleon
 Chinook Salmon
 Cuttlefish
+Dwarf Hamster
+Eastern Cottontail
 European Polecat
 Ghost Crab
 Golden Tortoise Beetle
@@ -15,6 +17,7 @@ Lawnmower Blenny
 Oenpelli Python
 Orchid Dottyback
 Rock Bass
+Thorny Devil
 Uaru Cichlid
 Underwing Moth
 
