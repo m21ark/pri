@@ -1,0 +1,15 @@
+Migratory:true^2.0 
+Class:Aves^0.1 
+Text:(migra* AND "to Mexico"~5)^1.5
+
+--> 481 entries
+
+
+
+
+Migratory:true^2
+Text:(migra* AND "to Mexico"~5)^3
+NOT Class:Aves
+
+--> 80 entries
+
