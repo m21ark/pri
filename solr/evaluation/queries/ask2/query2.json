@@ -1,0 +1,13 @@
+{
+    "params": {
+      "q": "native \"north america\" AND eats insects",
+      "q.op":"AND",
+      "rows": "30",
+      "fl":"Name Origin Location Diet Text",
+      "defType": "edismax",
+      "qf":"Location Diet^2.0 Text",
+      "bq": [
+      ]
+    }
+  }
+  
