@@ -1,8 +1,10 @@
 Anole Lizard
 Bearded Dragon
 Bigfin Reef Squid
+Blue Ringed Octopus
 Chameleon
 Chinook Salmon
+Crab Spider
 Cuttlefish
 Dwarf Hamster
 Eastern Cottontail
@@ -11,7 +13,10 @@ Ghost Crab
 Golden Tortoise Beetle
 Gray Tree Frog
 Green Anole
+Green Tree Frog
 Hogfish
+Iguana
+Jacksons Chameleon
 Keyhole Cichlid
 Lawnmower Blenny
 Oenpelli Python
@@ -20,4 +25,3 @@ Rock Bass
 Thorny Devil
 Uaru Cichlid
 Underwing Moth
-

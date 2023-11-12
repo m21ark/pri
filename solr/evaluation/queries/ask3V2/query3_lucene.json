@@ -1,0 +1,12 @@
+{
+  "params": {
+    "q": "Text:(\"change color\"~5)^2 OR (\"change skin\"~5) OR (\"change fur\"~5) OR (camouflage^2)\nFun_Fact: (\"change color\"~5)^2 OR (\"change skin\"~5) OR (\"change fur\"~5) OR (camouflage^2)\nFeatures: (\"change color\"~5)^2 OR (\"change skin\"~5) OR (\"change fur\"~5) OR (camouflage^2)",
+    "defType": "lucene",
+    "indent": "true",
+    "fl": "Name,Text,Features,score",
+    "q.op": "OR",
+    "rows": "30",
+    "useParams": "",
+    "_": "1699804500856"
+  }
+}
