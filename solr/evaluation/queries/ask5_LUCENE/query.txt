@@ -1,0 +1,8 @@
+http://localhost:8983/solr/animals/select?defType=lucene&fl=Name%2C%20Class%2C%20Migratory%2C%20Text%2C%20score&indent=true&q.op=OR&q=(Class%3AAves%5E0.01%20OR%20(NOT%20Class%3AAves)%5E15)%20AND%0AMigratory%3Atrue%5E1.5%20AND%0AText%3A((migra*%20AND%20%22to%20Mexico%22~5)%20OR%20(%22to%20America%22~10))%5E5&rows=30&start=0&useParams=
+
+(Class:Aves^0.01 OR (NOT Class:Aves)^15) AND
+Migratory:true^1.5 AND
+Text:((migra* AND "to Mexico"~5) OR ("to America"~10))^5
+
+--> 102 entries
+

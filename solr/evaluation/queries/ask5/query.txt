@@ -1,6 +1,0 @@
-(Class:Aves^0.01 OR (NOT Class:Aves)^15) AND
-Migratory:true^1.5 AND
-Text:((migra* AND "to Mexico"~5) OR ("to America"~10))^5
-
---> 121 entries
-
