@@ -4,5 +4,6 @@ http://localhost:8983/solr/animals/select?defType=edismax&fl=Name%2C%20Class%2C%
 Migratory:true^1.5 AND
 Text:((migra* AND "to Mexico"~5) OR ("to America"~10))^5
 
---> 121 entries
+--> 121 entries (V2)
+--> 110 entries (V1)
 

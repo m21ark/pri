@@ -4,4 +4,5 @@ Genus:Cani^3 AND
 Text:("hunting dog"~5 AND "energetic")^5
 Text:hunt*
 
---> 47 entries
+--> 47 entries (V2)
+--> 0 entries (V1)

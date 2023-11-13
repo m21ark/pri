@@ -4,5 +4,6 @@ http://localhost:8983/solr/animals/select?defType=lucene&fl=Name%2C%20Class%2C%2
 Migratory:true^1.5 AND
 Text:((migra* AND "to Mexico"~5) OR ("to America"~10))^5
 
---> 102 entries
+--> 102 entries (V2)
+--> 0 entries (V1)
 
