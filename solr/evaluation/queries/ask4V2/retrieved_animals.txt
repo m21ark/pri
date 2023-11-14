@@ -1,122 +1,122 @@
 [
   {
-    "Name": "Springbok",
-    "score": 18.654003
-  },
-  {
-    "Name": "Zebra",
-    "score": 17.537046
+    "Name": "Olive Baboon",
+    "score": 12.588503
   },
   {
     "Name": "Urial",
-    "score": 17.476135
+    "score": 12.517791
   },
   {
     "Name": "English Longhorn Cattle",
-    "score": 17.157475
+    "score": 11.168917
   },
   {
-    "Name": "Ox",
-    "score": 16.197567
-  },
-  {
-    "Name": "Onager",
-    "score": 15.929702
-  },
-  {
-    "Name": "Vicuna",
-    "score": 15.726372
-  },
-  {
-    "Name": "African Bush Elephant",
-    "score": 15.577902
-  },
-  {
-    "Name": "Mongoose",
-    "score": 15.410503
+    "Name": "Springbok",
+    "score": 11.097087
   },
   {
     "Name": "Brown Hyena",
-    "score": 15.397987
-  },
-  {
-    "Name": "Olive Baboon",
-    "score": 15.209724
-  },
-  {
-    "Name": "Kiang",
-    "score": 14.994279
-  },
-  {
-    "Name": "Collared Peccary",
-    "score": 14.955365
-  },
-  {
-    "Name": "Elk",
-    "score": 14.783472
-  },
-  {
-    "Name": "Roe Deer",
-    "score": 14.611142
-  },
-  {
-    "Name": "Alpaca",
-    "score": 14.5659685
-  },
-  {
-    "Name": "Wood Bison",
-    "score": 14.550149
-  },
-  {
-    "Name": "Elephant",
-    "score": 14.448194
-  },
-  {
-    "Name": "Sika Deer",
-    "score": 14.420281
-  },
-  {
-    "Name": "Pronghorn",
-    "score": 14.384162
-  },
-  {
-    "Name": "Capybara",
-    "score": 14.285211
-  },
-  {
-    "Name": "Bhutan Takin",
-    "score": 14.147407
-  },
-  {
-    "Name": "African Forest Elephant",
-    "score": 14.138272
-  },
-  {
-    "Name": "Fallow Deer",
-    "score": 14.085456
-  },
-  {
-    "Name": "Giraffe",
-    "score": 14.026889
-  },
-  {
-    "Name": "Deer",
-    "score": 14.010677
-  },
-  {
-    "Name": "Teddy Guinea Pig",
-    "score": 13.854003
-  },
-  {
-    "Name": "Sichuan Takin Tibetan Takin",
-    "score": 13.620836
+    "score": 10.72355
   },
   {
     "Name": "Cotton Top Tamarin",
-    "score": 13.610504
+    "score": 10.672355
   },
   {
-    "Name": "Arctic Fox",
-    "score": 13.404511
+    "Name": "Mongoose",
+    "score": 10.672355
+  },
+  {
+    "Name": "Macaque",
+    "score": 10.593935
+  },
+  {
+    "Name": "Agama Lizard",
+    "score": 10.061769
+  },
+  {
+    "Name": "Mandrill",
+    "score": 9.828802
+  },
+  {
+    "Name": "Giraffe",
+    "score": 9.497087
+  },
+  {
+    "Name": "Beabull",
+    "score": 9.419992
+  },
+  {
+    "Name": "Guinea Pig",
+    "score": 9.373813
+  },
+  {
+    "Name": "Doxle",
+    "score": 9.341942
+  },
+  {
+    "Name": "Crocodile",
+    "score": 9.047799
+  },
+  {
+    "Name": "Bea Tzu",
+    "score": 9.042258
+  },
+  {
+    "Name": "Yoranian",
+    "score": 9.042258
+  },
+  {
+    "Name": "Grey Mouse Lemur",
+    "score": 8.461768
+  },
+  {
+    "Name": "Ant",
+    "score": 8.363291
+  },
+  {
+    "Name": "Kiang",
+    "score": 8.285507
+  },
+  {
+    "Name": "Onager",
+    "score": 8.277985
+  },
+  {
+    "Name": "Bhutan Takin",
+    "score": 8.213345
+  },
+  {
+    "Name": "Collared Peccary",
+    "score": 8.173996
+  },
+  {
+    "Name": "Sika Deer",
+    "score": 8.122458
+  },
+  {
+    "Name": "African Bush Elephant",
+    "score": 7.7753267
+  },
+  {
+    "Name": "African Forest Elephant",
+    "score": 7.7753267
+  },
+  {
+    "Name": "Capybara",
+    "score": 7.7753267
+  },
+  {
+    "Name": "Pronghorn",
+    "score": 7.7753267
+  },
+  {
+    "Name": "Roe Deer",
+    "score": 7.7753267
+  },
+  {
+    "Name": "Vicuna",
+    "score": 7.7753267
   }
 ]

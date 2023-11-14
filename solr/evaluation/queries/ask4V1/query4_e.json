@@ -1,0 +1,9 @@
+{
+  "params": {
+    "rows": "30",
+    "fl": "Name,score", 
+    "defType": "edismax",
+    "q.op": "OR",
+    "q": "(Behavior:Herd^1.8 OR Behavior:pack^1.9 OR Text:group*^1.2) OR (Text:hierarchy^2.2 OR Text:\"social structure\"~4^2.3) OR (Text:territory*^1.6 OR Text: \"deal with territory\"~2^2.3)"
+  }
+}
