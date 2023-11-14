@@ -49,6 +49,9 @@
           },
           "filters": [
             {
+              "class": "solr.LowerCaseFilterFactory"
+            },
+            {
               "class": "solr.ASCIIFoldingFilterFactory",
               "preserveOriginal": true
             }
