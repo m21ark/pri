@@ -1,0 +1,9 @@
+{
+  "params": {
+    "q": "(Origin:\"North America\"^2.0 OR Text:\"native North America\"~5) AND (Diet:insects^2.0 OR Text:\"eats insects\")",
+    "q.op":"AND",
+    "rows": "30",
+    "fl":"Name Origin Diet Text",
+    "defType": "edismax"
+  }
+}
