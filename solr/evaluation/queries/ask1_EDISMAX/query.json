@@ -3,7 +3,7 @@
     "defType": "edismax",
     "fl": "Name, Genus",
     "indent": true,
-    "q": "Genus:Cani^3 AND Text:(\"hunting dog\"~5 AND \"energetic\")^5 Text:hunt*",
+    "q": "Genus:Canis^3 AND Text:(\"hunting dog\"~5 AND \"energetic\")^5 Text:hunt*",
     "rows": 30
   }
 }
