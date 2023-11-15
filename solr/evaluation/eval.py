@@ -52,7 +52,7 @@ def ap(results, relevant):
     return sum(precision_values)/len(precision_values)
 
 @metric
-def p10(results, relevant, n=10):
+def p30(results, relevant, n=30):
     """Precision at N"""
     return len([doc for doc in results[:n] if doc['Name'] in relevant])/n
 
@@ -62,7 +62,7 @@ def calculate_metric(key, results, relevant):
 # Define metrics to be calculated
 evaluation_metrics = {
     'ap': 'Average Precision',
-    'p10': 'Precision at 10 (P@10)'
+    'p30': 'Precision at 30 (P@30)'
 }
 
 # Calculate all metrics and export results as LaTeX table
@@ -73,8 +73,8 @@ df = pd.DataFrame([['Metric','Value']] +
     ]
 )
 
-with open('results.tex','w') as tf:
-    tf.write(df.to_latex())
+""" with open('results.tex','w') as tf:
+    tf.write(df.to_latex()) """
 
 # PRECISION-RECALL CURVE
 # Calculate precision and recall values as we move down the ranked list
@@ -111,7 +111,15 @@ for idx, step in enumerate(recall_values):
 
 disp = PrecisionRecallDisplay([precision_recall_match.get(r) for r in recall_values], recall_values)
 disp.plot()
-plt.savefig('precision_recall.pdf')
+plt.savefig('precision_recall.png')
+
+# save precision and recall values to file
+
+""" with open('metrics_results.txt', 'w') as prf:
+    prf.write(str(precision_recall_match))
+    prf.write("\n")
+    prf.write(str(recall_values))
+ """
 
 
 

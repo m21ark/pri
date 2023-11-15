@@ -1,16 +1,21 @@
+Cat Faced Spider
+Rock Bass
+Kokanee Salmon
+Towhee
+Blue Death Feigning Beetle
+Spotted Bass
 Rufous Hummingbird
 Fox Squirrel
 Orchard Oriole
 Trout
+Blue Gray Gnatcatcher
 Western Kingbird
+White Crowned Sparrow
 White Eyed Vireo
 Lake Trout
-Cat Faced Spider
 Black Footed Ferret
-Blue Gray Gnatcatcher
 Woodrat
 Black Capped Chickadee
-White Crowned Sparrow
 White Bass
 Agkistrodon Contortrix
 Eastern Turkey Wild Turkey
@@ -18,8 +23,3 @@ Blue Racer
 Red Winged Blackbird
 Texas Garter Snake
 Tufted Titmouse
-Common Grackle
-Gray Catbird
-Bass
-Downy Woodpecker
-Bullfrog

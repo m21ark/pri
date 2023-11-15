@@ -1,0 +1,1 @@
+http://localhost:8983/solr/animals/select?defType=lucene&indent=true&q.op=AND&q=(Origin%3A%22North%20America%22%5E2.0%20OR%20Text%3A%22native%20North%20America%22~5)%20AND%20(Diet%3Ainsects%5E2.0%20OR%20Text%3A%22eats%20insects%22~5)&rows=30&useParams=
