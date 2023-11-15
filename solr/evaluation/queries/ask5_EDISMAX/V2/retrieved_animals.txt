@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Mule Deer",
+    "score": 25.625507
+  },
+  {
+    "Name": "Black Sea Bass",
+    "score": 22.482847
+  },
+  {
+    "Name": "Black Swallowtail",
+    "score": 22.465603
+  },
+  {
+    "Name": "Black Bass",
+    "score": 22.413795
+  },
+  {
+    "Name": "Leafcutter Ant",
+    "score": 21.532772
+  },
+  {
+    "Name": "Striped Bass",
+    "score": 21.358957
+  },
+  {
+    "Name": "King Mackerel",
+    "score": 21.16878
+  },
+  {
+    "Name": "Buffalo Fish",
+    "score": 16.78803
+  },
+  {
+    "Name": "King Salmon",
+    "score": 16.032827
+  },
+  {
+    "Name": "Tiger Swallowtail",
+    "score": 15.9736805
+  },
+  {
+    "Name": "Bass",
+    "score": 15.951523
+  },
+  {
+    "Name": "Dark Eyed Junco 2",
+    "score": 15.634781
+  },
+  {
+    "Name": "Dark Eyed Junco",
+    "score": 15.634781
+  },
+  {
+    "Name": "Scarlet Tanager",
+    "score": 15.617934
+  },
+  {
+    "Name": "Great Hammerhead Shark",
+    "score": 15.530678
+  },
+  {
+    "Name": "Ocean Pout",
+    "score": 15.499228
+  },
+  {
+    "Name": "California Tarantula",
+    "score": 15.49596
+  },
+  {
+    "Name": "Africanized Bee Killer Bee",
+    "score": 15.339167
+  },
+  {
+    "Name": "Shortfin Mako Shark",
+    "score": 15.219047
+  },
+  {
+    "Name": "Rufous Hummingbird",
+    "score": 13.098938
+  },
+  {
+    "Name": "Yellowthroat",
+    "score": 12.9591
+  },
+  {
+    "Name": "Northern Parula",
+    "score": 12.579777
+  },
+  {
+    "Name": "Avocet",
+    "score": 12.011907
+  },
+  {
+    "Name": "Acadian Flycatcher",
+    "score": 10.548353
+  },
+  {
+    "Name": "Western Tanager",
+    "score": 10.407921
+  },
+  {
+    "Name": "Orange Crowned Warbler",
+    "score": 10.040171
+  },
+  {
+    "Name": "Robin",
+    "score": 9.572462
+  },
+  {
+    "Name": "White Eyed Vireo",
+    "score": 9.39124
+  },
+  {
+    "Name": "Eastern Phoebe",
+    "score": 9.30662
+  },
+  {
+    "Name": "Canvasback",
+    "score": 9.292484
+  }
+]

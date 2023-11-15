@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Rufous Hummingbird",
+    "score": 13.899354
+  },
+  {
+    "Name": "Northern Parula",
+    "score": 13.381485
+  },
+  {
+    "Name": "Yellowthroat",
+    "score": 13.214715
+  },
+  {
+    "Name": "Acadian Flycatcher",
+    "score": 11.090945
+  },
+  {
+    "Name": "Avocet",
+    "score": 11.057872
+  },
+  {
+    "Name": "Western Tanager",
+    "score": 10.610563
+  },
+  {
+    "Name": "Orange Crowned Warbler",
+    "score": 10.228264
+  },
+  {
+    "Name": "White Eyed Vireo",
+    "score": 10.13803
+  },
+  {
+    "Name": "Canvasback",
+    "score": 9.547324
+  },
+  {
+    "Name": "Eastern Phoebe",
+    "score": 9.3686075
+  },
+  {
+    "Name": "Purple Gallinule",
+    "score": 9.3317795
+  },
+  {
+    "Name": "Western Kingbird",
+    "score": 9.014082
+  },
+  {
+    "Name": "Robin",
+    "score": 9.002791
+  },
+  {
+    "Name": "White Crowned Sparrow",
+    "score": 8.983085
+  },
+  {
+    "Name": "Elf Owl",
+    "score": 8.312057
+  },
+  {
+    "Name": "Evening Grosbeak",
+    "score": 8.189078
+  },
+  {
+    "Name": "Northern Harrier 2",
+    "score": 8.186994
+  },
+  {
+    "Name": "Herring Gull",
+    "score": 8.074864
+  },
+  {
+    "Name": "Orchard Oriole",
+    "score": 8.016046
+  },
+  {
+    "Name": "Mourning Warbler",
+    "score": 7.6848493
+  },
+  {
+    "Name": "Scissor Tailed Flycatcher",
+    "score": 7.53729
+  },
+  {
+    "Name": "Osprey",
+    "score": 7.414366
+  },
+  {
+    "Name": "Snow Goose",
+    "score": 7.1026406
+  },
+  {
+    "Name": "Clarks Grebe",
+    "score": 6.8223987
+  },
+  {
+    "Name": "Horned Grebe",
+    "score": 6.6750855
+  },
+  {
+    "Name": "Macgillivrays Warbler",
+    "score": 6.6065254
+  },
+  {
+    "Name": "House Finch",
+    "score": 6.5707717
+  },
+  {
+    "Name": "Kentucky Warbler",
+    "score": 6.469941
+  },
+  {
+    "Name": "Ferruginous Hawk",
+    "score": 6.450539
+  },
+  {
+    "Name": "Night Heron",
+    "score": 6.450539
+  }
+]

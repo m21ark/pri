@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Mule Deer",
+    "score": 25.929564
+  },
+  {
+    "Name": "Black Sea Bass",
+    "score": 22.947628
+  },
+  {
+    "Name": "Black Bass",
+    "score": 22.537394
+  },
+  {
+    "Name": "Black Swallowtail",
+    "score": 22.506845
+  },
+  {
+    "Name": "Leafcutter Ant",
+    "score": 21.692102
+  },
+  {
+    "Name": "Striped Bass",
+    "score": 21.559956
+  },
+  {
+    "Name": "King Mackerel",
+    "score": 21.188316
+  },
+  {
+    "Name": "Buffalo Fish",
+    "score": 17.613867
+  },
+  {
+    "Name": "King Salmon",
+    "score": 16.50956
+  },
+  {
+    "Name": "Bass",
+    "score": 16.39067
+  },
+  {
+    "Name": "Dark Eyed Junco 2",
+    "score": 15.927511
+  },
+  {
+    "Name": "Dark Eyed Junco",
+    "score": 15.927511
+  },
+  {
+    "Name": "Scarlet Tanager",
+    "score": 15.902877
+  },
+  {
+    "Name": "Ocean Pout",
+    "score": 15.729296
+  },
+  {
+    "Name": "Tiger Swallowtail",
+    "score": 15.442927
+  },
+  {
+    "Name": "Shortfin Mako Shark",
+    "score": 15.319596
+  },
+  {
+    "Name": "Rufous Hummingbird",
+    "score": 13.899354
+  },
+  {
+    "Name": "Northern Parula",
+    "score": 13.381485
+  },
+  {
+    "Name": "Yellowthroat",
+    "score": 13.214715
+  },
+  {
+    "Name": "Acadian Flycatcher",
+    "score": 11.090945
+  },
+  {
+    "Name": "Avocet",
+    "score": 11.057872
+  },
+  {
+    "Name": "Western Tanager",
+    "score": 10.610563
+  },
+  {
+    "Name": "Orange Crowned Warbler",
+    "score": 10.228264
+  },
+  {
+    "Name": "White Eyed Vireo",
+    "score": 10.13803
+  },
+  {
+    "Name": "Canvasback",
+    "score": 9.547324
+  },
+  {
+    "Name": "Eastern Phoebe",
+    "score": 9.3686075
+  },
+  {
+    "Name": "Purple Gallinule",
+    "score": 9.3317795
+  },
+  {
+    "Name": "Western Kingbird",
+    "score": 9.014082
+  },
+  {
+    "Name": "Robin",
+    "score": 9.002791
+  },
+  {
+    "Name": "White Crowned Sparrow",
+    "score": 8.983085
+  }
+]
