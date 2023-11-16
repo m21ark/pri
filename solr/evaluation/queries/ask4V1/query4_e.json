@@ -1,9 +1,24 @@
 {
   "params": {
+    "q": "Walk in hierarchy groups and how they deal with territory",
     "rows": "30",
     "fl": "Name,score", 
     "defType": "edismax",
-    "q.op": "OR",
-    "q": "(Behavior:Herd^1.8 OR Behavior:pack^1.9 OR Text:group*^1.2) OR (Text:hierarchy^2.2 OR Text:\"social structure\"~4^2.3) OR (Text:territory*^1.6 OR Text: \"deal with territory\"~2^2.3)"
+    "tie": "0.1",
+    "mm": "1",
+    "bq": [
+      "Text:group*^2.5",
+      "Behavior:Herd^2.0",
+      "Text:Herd^1.3",    
+      "Text:pack*^1.8",
+      "Text:community*^1.6",
+      "Text:social*~1^1.5",
+      "Text:hierarchy^1.9",
+      "Text:\"social structure\"~4^1.5",
+      "Text:territory*^2.8",
+      "Text: \"mark territorial\"~3^2.4",
+      "Text: \"territorial behavior\"~3^2.4",
+      "Text: \"deal with territory\"~2^2.4"
+    ]
   }
 }

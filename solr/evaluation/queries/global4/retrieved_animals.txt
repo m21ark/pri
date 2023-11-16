@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Collared Peccary",
+    "score": 10.936496
+  },
+  {
+    "Name": "Belgian Malinois",
+    "score": 9.37911
+  },
+  {
+    "Name": "Dutch Shepherd",
+    "score": 8.49032
+  },
+  {
+    "Name": "Zebu",
+    "score": 8.481318
+  },
+  {
+    "Name": "Elephant",
+    "score": 8.034284
+  },
+  {
+    "Name": "Goat",
+    "score": 7.7056823
+  },
+  {
+    "Name": "Highland Cattle",
+    "score": 7.5851245
+  },
+  {
+    "Name": "Springbok",
+    "score": 7.5617757
+  },
+  {
+    "Name": "Dik Dik",
+    "score": 7.4532037
+  },
+  {
+    "Name": "Spanish Water Dog",
+    "score": 7.3593097
+  },
+  {
+    "Name": "Impala",
+    "score": 7.2039084
+  },
+  {
+    "Name": "Antelope",
+    "score": 7.1858144
+  },
+  {
+    "Name": "Briard",
+    "score": 7.167417
+  },
+  {
+    "Name": "Capybara",
+    "score": 7.1023717
+  },
+  {
+    "Name": "Groenendael",
+    "score": 7.09045
+  },
+  {
+    "Name": "Giraffe",
+    "score": 7.0020294
+  },
+  {
+    "Name": "Mongoose",
+    "score": 6.8517838
+  },
+  {
+    "Name": "Deer",
+    "score": 6.7566104
+  },
+  {
+    "Name": "Bordoodle",
+    "score": 6.7216253
+  },
+  {
+    "Name": "Rhesus Macaque",
+    "score": 6.6761427
+  },
+  {
+    "Name": "Wood Bison",
+    "score": 6.5220923
+  },
+  {
+    "Name": "Catalan Sheepdog",
+    "score": 6.4974527
+  },
+  {
+    "Name": "Black Mouth Cur",
+    "score": 6.4762144
+  },
+  {
+    "Name": "Cotton Top Tamarin",
+    "score": 6.4649954
+  },
+  {
+    "Name": "Malayan Tiger",
+    "score": 6.461911
+  },
+  {
+    "Name": "Hokkaido",
+    "score": 6.3688927
+  },
+  {
+    "Name": "Berger Picard",
+    "score": 6.3374586
+  },
+  {
+    "Name": "German Shepherd",
+    "score": 6.257166
+  },
+  {
+    "Name": "Kiang",
+    "score": 6.251649
+  },
+  {
+    "Name": "Agama Lizard",
+    "score": 6.1422844
+  }
+]

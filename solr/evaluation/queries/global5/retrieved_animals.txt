@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Coues Deer",
+    "score": 18.392155
+  },
+  {
+    "Name": "Elf Owl",
+    "score": 5.448632
+  },
+  {
+    "Name": "Desert Kingsnake",
+    "score": 4.7225018
+  },
+  {
+    "Name": "Bronze Whaler Shark",
+    "score": 4.7199936
+  },
+  {
+    "Name": "Spanish Mackerel",
+    "score": 4.6713223
+  },
+  {
+    "Name": "Mule Deer",
+    "score": 4.60247
+  },
+  {
+    "Name": "Leptocephalus",
+    "score": 4.38054
+  },
+  {
+    "Name": "Axolotl",
+    "score": 4.3166437
+  },
+  {
+    "Name": "Vaquita",
+    "score": 4.2706795
+  },
+  {
+    "Name": "Hogfish",
+    "score": 4.201675
+  },
+  {
+    "Name": "Gopher",
+    "score": 4.200928
+  },
+  {
+    "Name": "Elephant Seal",
+    "score": 4.184848
+  },
+  {
+    "Name": "Ocean Whitefish",
+    "score": 4.131783
+  },
+  {
+    "Name": "Cubera Snapper",
+    "score": 4.1300254
+  },
+  {
+    "Name": "Yellowtail Snapper",
+    "score": 4.0489216
+  },
+  {
+    "Name": "Needlefish",
+    "score": 4.0314407
+  },
+  {
+    "Name": "Sturgeon",
+    "score": 4.025107
+  },
+  {
+    "Name": "Blue Catfish",
+    "score": 3.9360127
+  },
+  {
+    "Name": "Silky Shark",
+    "score": 3.9247108
+  },
+  {
+    "Name": "Black Sea Bass",
+    "score": 3.916414
+  },
+  {
+    "Name": "Bighorn Sheep",
+    "score": 3.8476684
+  },
+  {
+    "Name": "White Marlin",
+    "score": 3.8141668
+  },
+  {
+    "Name": "Caribbean Reef Shark",
+    "score": 3.6592355
+  },
+  {
+    "Name": "Striped Bass",
+    "score": 3.6430604
+  },
+  {
+    "Name": "Mangrove Snapper",
+    "score": 3.642464
+  },
+  {
+    "Name": "Mexican Free Tailed Bat",
+    "score": 3.549821
+  },
+  {
+    "Name": "Grizzly Bear",
+    "score": 3.5060234
+  },
+  {
+    "Name": "Mexican Mole Lizard",
+    "score": 3.4938555
+  },
+  {
+    "Name": "Leopard Shark",
+    "score": 3.4868233
+  },
+  {
+    "Name": "Mexican Alligator Lizard",
+    "score": 3.426389
+  }
+]

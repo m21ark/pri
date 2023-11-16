@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Asian Lady Beetle",
+    "score": 3.9351003
+  },
+  {
+    "Name": "Rufous Hummingbird",
+    "score": 3.8669248
+  },
+  {
+    "Name": "Ladybug",
+    "score": 3.8317504
+  },
+  {
+    "Name": "Cardinal",
+    "score": 3.7676497
+  },
+  {
+    "Name": "Hornet",
+    "score": 3.7574966
+  },
+  {
+    "Name": "Ruby Crowned Kinglet",
+    "score": 3.7108133
+  },
+  {
+    "Name": "Cicada",
+    "score": 3.709963
+  },
+  {
+    "Name": "Savannah Sparrow",
+    "score": 3.7031827
+  },
+  {
+    "Name": "Kissing Bugs",
+    "score": 3.7030854
+  },
+  {
+    "Name": "Northern Jacana",
+    "score": 3.7008228
+  },
+  {
+    "Name": "Western Tanager",
+    "score": 3.6984081
+  },
+  {
+    "Name": "Swainsons Hawk 2",
+    "score": 3.6614394
+  },
+  {
+    "Name": "Scissor Tailed Flycatcher",
+    "score": 3.6612785
+  },
+  {
+    "Name": "Xeme Sabines Gull",
+    "score": 3.6578763
+  },
+  {
+    "Name": "Locust",
+    "score": 3.6549847
+  },
+  {
+    "Name": "Warbler",
+    "score": 3.639615
+  },
+  {
+    "Name": "Woodpecker",
+    "score": 3.6121304
+  },
+  {
+    "Name": "Purple Gallinule",
+    "score": 3.6099486
+  },
+  {
+    "Name": "Flycatcher",
+    "score": 3.6085937
+  },
+  {
+    "Name": "Turkey",
+    "score": 3.5953598
+  },
+  {
+    "Name": "Western Kingbird",
+    "score": 3.5863926
+  },
+  {
+    "Name": "Summer Tanager",
+    "score": 3.5628521
+  },
+  {
+    "Name": "American Dog Tick",
+    "score": 3.5433304
+  },
+  {
+    "Name": "Green Snake",
+    "score": 3.5371294
+  },
+  {
+    "Name": "Dinosaur Shrimp",
+    "score": 3.5357804
+  },
+  {
+    "Name": "White Bass",
+    "score": 3.5336277
+  },
+  {
+    "Name": "Spider Wasp",
+    "score": 3.53201
+  },
+  {
+    "Name": "Mealybug",
+    "score": 3.528649
+  },
+  {
+    "Name": "Woodlouse Spider",
+    "score": 3.523325
+  },
+  {
+    "Name": "Barn Swallow",
+    "score": 3.5167003
+  }
+]

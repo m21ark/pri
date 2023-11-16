@@ -1,0 +1,12 @@
+{
+  "params": {
+    "q": "Animals that are (NOT birds) that migrate to Mexico",
+    "defType": "edismax",
+    "qf": "Name^2.5 Features^2.0 Fun_Fact^2.0 Diet^2.0 Text^1.5 Origin^3.5 Features^2.0 Behavior^2.0",
+    "pf": "Name^2.5 Features^2.0 Fun_Fact^2.0 Diet^2.0 Text^1.5 Origin^3.5 Features^2.0 Behavior^2.0",
+    "mm": "3<-25%",
+    "ps": 5,
+    "fl": "Name, score",
+    "rows": "30"
+  }
+}
