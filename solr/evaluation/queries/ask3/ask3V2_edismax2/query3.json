@@ -1,0 +1,19 @@
+{
+  "params":{
+    "mm":"2",
+    "qs":"3",
+    "ps":"3",
+    "indent":"true",
+    "fl":"Name,Text,Fun_Fact, Features",
+    "q.op":"OR",
+    "rows":"30",
+    "bq":"change^3.0",
+    "q":"change color fur camouflage",
+    "tie":"0.1",
+    "defType":"edismax",
+    "qf":"Text^2.0 Fun_Fact^1.5 Features^1.0",
+    "pf":"Text^2.0 Fun_Fact^1.5 Features^1.0",
+    "useParams":"",
+    "_":"1700084304360"
+  }
+}
