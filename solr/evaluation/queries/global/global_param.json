@@ -1,6 +1,6 @@
 {
   "params": {
-    "q": "Animals that are (NOT birds) that migrate to Mexico",
+    "q": "Animals that walk in hierarchical groups or herds and how they deal with territory",
     "defType": "edismax",
     "qf": "Name^2.5 Features^2.0 Fun_Fact^2.0 Diet^2.0 Text^1.5 Origin^3.5 Features^2.0 Behavior^2.0",
     "pf": "Name^2.5 Features^2.0 Fun_Fact^2.0 Diet^2.0 Text^1.5 Origin^3.5 Features^2.0 Behavior^2.0",
