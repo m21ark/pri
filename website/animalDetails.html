@@ -1,0 +1,58 @@
+<!-- animalDetails.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Animal Details</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="#">Animal Details</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <h2 id="animalName">Animal Name</h2>
+      <p id="animalDescription">Description of the animal.</p>
+      <p><a href="#" onclick="goBack()">Back to Search Results</a></p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      // Function to navigate back to the search results page
+      function goBack() {
+        window.history.back();
+      }
+
+      // Function to get URL parameters
+      function getUrlParameter(name) {
+        name = name.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results === null
+          ? ""
+          : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      // Fill in the details from URL parameters
+      document.getElementById("animalName").textContent =
+        getUrlParameter("name");
+      document.getElementById("animalDescription").textContent =
+        getUrlParameter("description");
+    </script>
+  </body>
+</html>
