@@ -33,8 +33,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-      // Function to navigate back to the search results page
       function goBack() {
+        localStorage.setItem("useCache", "true");
+
+        // Navigate back
         window.history.back();
       }
 

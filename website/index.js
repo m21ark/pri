@@ -10,11 +10,11 @@ function addCard(json, searchTerm) {
   cardBody.className = "card-body";
 
   // Set card title
-  var title = document.createElement("h5");
+  let title = document.createElement("h5");
   title.className = "card-title";
 
   // Create a link to the individual animal details page
-  var titleLink = document.createElement("a");
+  let titleLink = document.createElement("a");
   titleLink.href =
     "animalDetails.html?name=" +
     encodeURIComponent(json.name) +
@@ -150,6 +150,9 @@ function search() {
       animal.description.toLowerCase().includes(searchTerm)
   );
 
+  // Store search results in localStorage
+  localStorage.setItem("searchResults", JSON.stringify(matchingAnimals));
+
   if (matchingAnimals.length === 0) {
     // Display "No results" message
     displayNoResultsMessage();
@@ -170,6 +173,22 @@ function search() {
     */
 }
 
+function getCacheResults() {
+  // Retrieve search results from localStorage
+  var preservedResults = JSON.parse(localStorage.getItem("searchResults"));
+
+  // Navigate back to the search results page
+  if (preservedResults) {
+    // Clear previous results
+    clearResults();
+
+    if (preservedResults.length === 0) displayNoResultsMessage();
+    else preservedResults.forEach((animal) => addCard(animal, ""));
+
+    localStorage.setItem("useCache", "false");
+  }
+}
+
 function clearResults() {
   let resultsContainer = document.getElementById("resultsContainer");
   resultsContainer.innerHTML = "";
@@ -181,3 +200,8 @@ function displayNoResultsMessage() {
   noResultsMessage.textContent = "No results found.";
   resultsContainer.appendChild(noResultsMessage);
 }
+
+if (localStorage.getItem("useCache") === null)
+  localStorage.setItem("useCache", "false");
+
+if (localStorage.getItem("useCache") === "true") getCacheResults();
