@@ -10,6 +10,18 @@ docker start animal_exploration_solr
 
 sleep 5
 
+# Make the necessary changes to allow CORS
+# docker exec -u 0 animal_exploration_solr apt-get update
+# docker exec -u 0 animal_exploration_solr apt-get install -y nano
+
+# Start bash in the container with root permissions
+# docker exec -u 0 -it animal_exploration_solr /bin/bash
+
+# Restart the container
+# docker restart animal_exploration_solr
+
+# sleep 10
+
 # Delete the existing core
 docker exec animal_exploration_solr bin/solr delete -c animals
 
@@ -20,6 +32,21 @@ docker exec animal_exploration_solr bin/solr create -c animals
 curl -X POST -H 'Content-type:application/json' \
     --data-binary "@./${SCHEMA_NAME}" \
     http://localhost:8983/solr/animals/schema
+
+# Configure MLT handler
+curl -X POST -H 'Content-type:application/json' \
+    --data-binary "@./mlt-handler.json" \
+    http://localhost:8983/solr/animals/config
+
+# Configure CORS
+# curl -X POST -H 'Content-type:application/json' \
+#     --data-binary "@./cors-config.json" \
+#     http://localhost:8983/solr/animals/config
+
+# Example of MLT query
+# curl http://localhost:8983/solr/animals/mlt?q=id:1&mlt.fl=body
+# curl http://localhost:8983/solr/animals/mlt?q=id:b73a3418-4c8a-4aa9-b58f-ac13de6d9bfe&fl=id,Name
+
 
 # Populate collection using a mapped path inside the container.
 docker exec -it animal_exploration_solr bin/post -c animals /home/data/output_clean.csv

@@ -1,0 +1,15 @@
+{
+    "add-requesthandler": {
+        "name": "/mlt",
+        "class": "solr.MoreLikeThisHandler",
+        "defaults": {
+            "mlt.fl": "Name,Text",
+            "mlt.mintf": "10",
+            "mlt.mindf": "6",
+            "mlt.minwl": "3",
+            "mlt.maxdfpct":"60",
+            "mlt.boost": "true",
+            "mlt.qf": "Name^2.0 Features^1.2 Fun_Fact^1.2 Origin^1.0 Diet^1.0 Text^1.5 Genus^2.0"
+        }
+    }
+}
