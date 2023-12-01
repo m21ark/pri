@@ -100,8 +100,16 @@
 
           items.forEach((item) => {
             const card = document.createElement("div");
+            const cardTitleLink = document.createElement("a");
+            const cardTitle = document.createElement("h5");
+
             card.classList.add("card-carousel");
-            card.innerText = item.Name; // Change this based on your data structure
+            cardTitleLink.href = `animalDetails.html?id=${item.id}`;
+            cardTitleLink.classList.add("card-title-link");
+            cardTitle.textContent = item.Name;
+
+            cardTitleLink.appendChild(cardTitle);
+            card.appendChild(cardTitleLink);
             carousel.appendChild(card);
           });
 
