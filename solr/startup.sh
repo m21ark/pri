@@ -28,6 +28,9 @@ docker exec animal_exploration_solr bin/solr delete -c animals
 # Create a new core
 docker exec animal_exploration_solr bin/solr create -c animals
 
+SYNONYMS_FILE="${PWD}/MySynonyms.txt"
+docker cp "${SYNONYMS_FILE}"  animal_exploration_solr:/var/solr/data/animals/conf/MySynonyms.txt
+
 # Schema definition via API, using the provided schema name
 curl -X POST -H 'Content-type:application/json' \
     --data-binary "@./${SCHEMA_NAME}" \

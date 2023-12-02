@@ -22,12 +22,8 @@
             "class": "solr.KStemFilterFactory"
           },
           {
-            "class": "solr.ManagedSynonymGraphFilterFactory",
-            "managed": "english"
-          },
-          {
-            "class": "solr.SynonymFilterFactory",
-            "synonyms": "synonyms.txt",
+            "class": "solr.SynonymGraphFilterFactory",
+            "synonyms": "MySynonyms.txt",
             "ignoreCase": true
           },
           {
@@ -55,8 +51,8 @@
             "managed": "english"
           },
           {
-            "class": "solr.SynonymFilterFactory",
-            "synonyms": "synonyms.txt",
+            "class": "solr.SynonymGraphFilterFactory",
+            "synonyms": "MySynonyms.txt",
             "ignoreCase": true
           },
           {
@@ -104,8 +100,9 @@
             "class": "solr.ClassicTokenizerFactory"
           },
           {
-            "class": "solr.ManagedSynonymGraphFilterFactory",
-            "managed": "english"
+            "class": "solr.SynonymGraphFilterFactory",
+            "synonyms": "MySynonyms.txt",
+            "ignoreCase": true
           },
           {
             "class": "solr.FlattenGraphFilterFactory"
@@ -131,8 +128,9 @@
             "class": "solr.ClassicTokenizerFactory"
           },
           {
-            "class": "solr.ManagedSynonymGraphFilterFactory",
-            "managed": "english"
+            "class": "solr.SynonymGraphFilterFactory",
+            "synonyms": "MySynonyms.txt",
+            "ignoreCase": true
           },
           {
             "class": "solr.FlattenGraphFilterFactory"
