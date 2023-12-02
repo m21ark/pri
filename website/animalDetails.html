@@ -1,0 +1,127 @@
+<!-- animalDetails.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Animal Details</title>
+    <link rel="shortcut icon" href="image/favicon/animal.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="#">Animal Details</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <h2 id="animalName">Animal Name</h2>
+      <p id="animalDescription">Description of the animal.</p>
+      <p><a href="#" onclick="goBack()">Back to Search Results</a></p>
+    </div>
+
+    <div id="carousel-container">
+      <div id="carousel"></div>
+    </div>
+
+    <div class="d-flex justify-content-center my-4 ">
+      <button id="prev" class="mr-2">Previous</button>
+      <button id="next">Next</button>
+    </div>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function goBack() {
+        localStorage.setItem("useCache", "true");
+        // Navigate back
+        window.history.back();
+      }
+
+      // Function to get URL parameters
+      function getUrlParameter(name) {
+        name = name.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results === null
+          ? ""
+          : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      let currentIndex = 0;
+      let items = [];
+
+      function showCarousel() {
+        carousel.style.transform = `translateX(${-currentIndex * (100 / 3)}%)`;
+      }
+
+      // Function to move to the next card
+      function next() {
+        currentIndex = (currentIndex + 1) % Math.ceil(items.length / 3);
+        showCarousel();
+      }
+
+      // Function to move to the previous card
+      function prev() {
+        currentIndex = (currentIndex - 1 + Math.ceil(items.length / 3)) % Math.ceil(items.length / 3);
+        showCarousel();
+      }
+
+      let apiUrl = `http://localhost:3000/solr/animals/mlt?q=id:${getUrlParameter(
+        "id"
+      )}`;
+
+      const carouselContainer = document.getElementById("carousel-container");
+      const carousel = document.getElementById("carousel");
+
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+          // Get the first result
+          const match = data.match.docs[0];
+          items = data.response.docs;
+          // Fill in the details
+          document.getElementById("animalName").textContent = match.Name;
+          document.getElementById("animalDescription").textContent = match.Text;
+
+          items.forEach((item) => {
+            const card = document.createElement("div");
+            const cardTitleLink = document.createElement("a");
+            const cardTitle = document.createElement("h5");
+
+            card.classList.add("card-carousel");
+            cardTitleLink.href = `animalDetails.html?id=${item.id}`;
+            cardTitleLink.classList.add("card-title-link");
+            cardTitle.textContent = item.Name;
+
+            cardTitleLink.appendChild(cardTitle);
+            card.appendChild(cardTitleLink);
+            carousel.appendChild(card);
+          });
+
+          showCarousel();
+
+          // Trigger next and previous functions on button click
+          document.getElementById("prev").addEventListener("click", prev);
+          document.getElementById("next").addEventListener("click", next);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    </script>
+  </body>
+</html>
