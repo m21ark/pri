@@ -26,6 +26,11 @@
             "managed": "english"
           },
           {
+            "class": "solr.SynonymFilterFactory",
+            "synonyms": "synonyms.txt",
+            "ignoreCase": true
+          },
+          {
             "class": "solr.FlattenGraphFilterFactory"
           }
         ]
@@ -48,6 +53,11 @@
           {
             "class": "solr.ManagedSynonymGraphFilterFactory",
             "managed": "english"
+          },
+          {
+            "class": "solr.SynonymFilterFactory",
+            "synonyms": "synonyms.txt",
+            "ignoreCase": true
           },
           {
             "class": "solr.FlattenGraphFilterFactory"
@@ -127,7 +137,6 @@
           {
             "class": "solr.FlattenGraphFilterFactory"
           }
-          
         ]
       }
     },
@@ -157,7 +166,7 @@
           }
         ]
       }
-    }    
+    }
   ],
   "add-field": [
     {
