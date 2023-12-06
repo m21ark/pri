@@ -10,8 +10,10 @@ North America animals that like to eat insects
 Change the color of their skin, fur or feathers for the purpose of camouflage
 Animals that walk in hierarchical groups or herds and how they deal with territory
 Animals that are (NOT birds) that migrate to Mexico
+(NOT Birds) migrate to Mexico or migrate to America
 
 
+Black Witch Moth
 {
     "params": {
       "defType": "edismax",
