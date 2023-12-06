@@ -36,9 +36,9 @@ sleep 10
 # solr create -c animals
 
 echo "SCHEMA ..."
-
-SYNONYMS_FILE="${PWD}/MySynonyms.txt"
-docker cp "${SYNONYMS_FILE}"  animal_exploration_solr:/var/solr/data/animals/conf/MySynonyms.txt
+echo "SYNONYM ..."
+SYNONYMS_FILE="/home/solr/MySynonyms.txt"
+cp "${SYNONYMS_FILE}"  animal_exploration_solr:/var/solr/data/animals/conf/MySynonyms.txt
 
 # Schema definition via API, using the provided schema name
 curl -X POST -H 'Content-type:application/json' \
