@@ -1,0 +1,64 @@
+[
+    {
+        "store": "animals_store",
+        "name": "queryMatchName",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Name}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "queryMatchGenus",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Genus}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "queryMatchClass",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Class}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "queryMatchOrigin",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Origin}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "queryMatchFun_Fact",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Fun_Fact}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "queryMatchMigratory",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Migratory}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "queryMatchText",
+        "class": "org.apache.solr.ltr.feature.SolrFeature",
+        "params": {
+            "q": "{!dismax qf=Text}${text}"
+        }
+    },
+    {
+        "store": "animals_store",
+        "name": "originalScore",
+        "class": "org.apache.solr.ltr.feature.OriginalScoreFeature",
+        "params": {}
+    }
+]
