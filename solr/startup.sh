@@ -40,6 +40,11 @@ echo "SYNONYM ..."
 SYNONYMS_FILE="/home/solr/MySynonyms.txt"
 mv /home/solr/MySynonyms.txt  /var/solr/data/animals/conf/MySynonyms.txt
 
+
+curl -XPUT 'http://localhost:8983/solr/test/schema/model-store'\
+     --data-binary "@/path/to/my_efi_model.json" -H 'Content-type:application/json'
+
+
 # Schema definition via API, using the provided schema name
 curl -X POST -H 'Content-type:application/json' \
     --data-binary "@/home/solr/${SCHEMA_NAME}" \
