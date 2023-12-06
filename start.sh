@@ -23,4 +23,4 @@ docker rmi $IMAGE_NAME 2>/dev/null
 docker build -t $IMAGE_NAME -f $DOCKERFILE_PATH/Dockerfile $BUILD_OPTIONS .
 
 # Create and start a container based on the newly built image
-docker run -d --name $CONTAINER_NAME $IMAGE_NAME
+docker run -d --name $CONTAINER_NAME -p 8983:8983 $IMAGE_NAME
