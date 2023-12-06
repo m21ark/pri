@@ -38,7 +38,7 @@ sleep 10
 echo "SCHEMA ..."
 echo "SYNONYM ..."
 SYNONYMS_FILE="/home/solr/MySynonyms.txt"
-cp "${SYNONYMS_FILE}"  animal_exploration_solr:/var/solr/data/animals/conf/MySynonyms.txt
+mv /home/solr/MySynonyms.txt  /var/solr/data/animals/conf/MySynonyms.txt
 
 # Schema definition via API, using the provided schema name
 curl -X POST -H 'Content-type:application/json' \
