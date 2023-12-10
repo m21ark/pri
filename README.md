@@ -13,6 +13,10 @@ Animals that are (NOT birds) that migrate to Mexico
 (NOT Birds) migrate to Mexico or migrate to America
 
 
+
+http://localhost:8983/solr/animals/query?q=natural%20habitat&df=Text&rq={!ltr%20model=animals_model%20efi.text=%27natural%20habitat%27}&fl=id,score,[features]
+
+
 Black Witch Moth
 {
     "params": {

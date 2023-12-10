@@ -40,6 +40,7 @@ echo "SYNONYM ..."
 SYNONYMS_FILE="/home/solr/MySynonyms.txt"
 mv /home/solr/MySynonyms.txt  /var/solr/data/animals/conf/MySynonyms.txt
 
+
 # Schema definition via API, using the provided schema name
 curl -X POST -H 'Content-type:application/json' \
     --data-binary "@/home/solr/${SCHEMA_NAME}" \
@@ -50,9 +51,6 @@ curl -X POST -H 'Content-type:application/json' \
     --data-binary "@/home/solr/mlt-handler.json" \
     http://localhost:8983/solr/animals/config
 
-
-curl -XPUT 'http://localhost:8983/solr/test/schema/model-store' \
-    --data-binary "@/home/solr/ltr_model.json" -H 'Content-type:application/json'
 
 # echo "Configuring solr config"
 # echo "copying ..."
@@ -67,6 +65,12 @@ echo "Feature store configuration..."
 
 curl -XPUT 'http://localhost:8983/solr/animals/schema/feature-store' \
     --data-binary "@/home/solr/myFeatures.json" -H 'Content-type:application/json'
+
+
+
+echo "Model store configuration..."
+curl -XPUT 'http://localhost:8983/solr/animals/schema/model-store' \
+    --data-binary "@/home/solr/ltr_model.json" -H 'Content-type:application/json'
 
 # Configure CORS
 # curl -X POST -H 'Content-type:application/json' \
