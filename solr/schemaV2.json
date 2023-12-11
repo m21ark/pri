@@ -175,7 +175,7 @@
     },
     {
       "name": "Average_Spawn_Size",
-      "type": "text_general",
+      "type": "numeric_general",
       "multiValued": false,
       "stored": true
     },
@@ -259,12 +259,6 @@
     },
     {
       "name": "Biggest_Threat",
-      "type": "shortTextField",
-      "indexed": true,
-      "stored": true
-    },
-    {
-      "name": "Other_Name(s)",
       "type": "shortTextField",
       "indexed": true,
       "stored": true
