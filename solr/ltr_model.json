@@ -3,21 +3,25 @@
   "name" : "animals_model",
   "class" : "org.apache.solr.ltr.model.LinearModel",
   "features" : [
-    { "name" : "tfidf_sim_a" },
-    { "name" : "tfidf_sim_b" },
-    { "name" : "bm25_sim_a" },
-    { "name" : "bm25_sim_b" },
-    { "name" : "max_sim" },
-    { "name" : "original_score" }
+    { "name" : "queryMatchName" },
+    { "name" : "queryMatchGenus" },
+    { "name" : "queryMatchClass" },
+    { "name" : "queryMatchOrigin" },
+    { "name" : "queryMatchFun_Fact" },
+    { "name" : "queryMatchMigratory" }, 
+    { "name": "queryMatchText" },
+    { "name": "originalScore" }
   ],
   "params" : {
     "weights" : {
-      "tfidf_sim_a" : 0.0,
-      "tfidf_sim_b" : 0.0,
-      "bm25_sim_a" : 0.0,
-      "bm25_sim_b" : 0.0,
-      "max_sim" : 0.0,
-      "original_score" : 1.0
+      "queryMatchName" : 0.0,
+      "queryMatchGenus" : 0.0,
+      "queryMatchClass" : 0.0,
+      "queryMatchOrigin" : 0.0,
+      "queryMatchFun_Fact" : 0.0,
+      "queryMatchMigratory" : 0.0,
+      "queryMatchText" : 0.0,
+      "originalScore" : 1.0
     }
   }
 }
