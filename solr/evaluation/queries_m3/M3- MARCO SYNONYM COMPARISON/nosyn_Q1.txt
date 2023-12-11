@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Keagle",
+    "score": 8.691734
+  },
+  {
+    "Name": "Nova Scotia Duck Tolling Retriever",
+    "score": 8.483938
+  },
+  {
+    "Name": "Wirehaired Vizsla",
+    "score": 8.389216
+  },
+  {
+    "Name": "Beaski",
+    "score": 8.317242
+  },
+  {
+    "Name": "English Foxhound",
+    "score": 8.30954
+  },
+  {
+    "Name": "Pitsky",
+    "score": 8.185026
+  },
+  {
+    "Name": "Blue Picardy Spaniel",
+    "score": 8.112768
+  },
+  {
+    "Name": "Ainu",
+    "score": 8.091524
+  },
+  {
+    "Name": "Pointer Mix",
+    "score": 8.072494
+  },
+  {
+    "Name": "Spanador",
+    "score": 7.915838
+  },
+  {
+    "Name": "Labahoula",
+    "score": 7.90283
+  },
+  {
+    "Name": "Azawakh",
+    "score": 7.8531713
+  },
+  {
+    "Name": "Pitador",
+    "score": 7.78303
+  },
+  {
+    "Name": "Blue Lacy Dog",
+    "score": 7.7664433
+  },
+  {
+    "Name": "Afghan Hound",
+    "score": 7.75769
+  },
+  {
+    "Name": "Dalmadoodle",
+    "score": 7.738287
+  },
+  {
+    "Name": "Shollie",
+    "score": 7.7348876
+  },
+  {
+    "Name": "American Eskimo Dog",
+    "score": 7.716104
+  },
+  {
+    "Name": "Boxer Mix",
+    "score": 7.6731553
+  },
+  {
+    "Name": "Cockalier",
+    "score": 7.66236
+  },
+  {
+    "Name": "Comfort Retriever",
+    "score": 7.638147
+  },
+  {
+    "Name": "Petit Basset Griffon Vendeen",
+    "score": 7.621161
+  },
+  {
+    "Name": "Shiba Inu Mix",
+    "score": 7.544132
+  },
+  {
+    "Name": "Vizsla",
+    "score": 7.540906
+  },
+  {
+    "Name": "Poodle",
+    "score": 7.5281816
+  },
+  {
+    "Name": "Wire Fox Terrier",
+    "score": 7.5135503
+  },
+  {
+    "Name": "Yorkie Poo",
+    "score": 7.512059
+  },
+  {
+    "Name": "American Bulldog",
+    "score": 7.5091515
+  },
+  {
+    "Name": "Shepadoodle",
+    "score": 7.491824
+  },
+  {
+    "Name": "Miniature Husky",
+    "score": 7.442916
+  }
+]
