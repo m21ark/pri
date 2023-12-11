@@ -6,9 +6,11 @@ Animals that generally walk in groups and their respective hierarchy and how the
     - no V1 : Saber Toothed Tiger, Bhutan Takin(os males podem ficar sozinhos durante uma ano), Lace Monitor(engraçado de se falar, n é social), Husky(n sei, parece forçado)
 
 Energetic dog breeds suited for hunting
-
 North America animals that like to eat insects
+
 Change the color of their skin, fur or feathers for the purpose of camouflage
+
+
 Animals that walk in hierarchical groups or herds and how they deal with territory
 
 Animals that are (NOT birds) that migrate to Mexico

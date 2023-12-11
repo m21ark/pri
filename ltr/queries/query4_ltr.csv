@@ -1,0 +1,31 @@
+Name,[features],score
+Rhesus Macaque,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.44997647,originalScore=6.472636",4.0
+Bilby,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.4490908,originalScore=6.3257113",4.0
+Dutch Shepherd,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014848E-4,originalScore=6.04709",5.0
+Briard,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015367E-4,originalScore=6.039974",3.0
+Agama Lizard,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.430129,queryMatchMigratory=0.0,queryMatchText=0.46774384,originalScore=5.9774036",5.0
+Japanese Squirrel,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.44997644,originalScore=5.9772515",3.0
+Husky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.6169965,queryMatchMigratory=0.0,queryMatchText=1.8016006E-4,originalScore=5.9707522",2.0
+Woolly Monkey,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.46742442,originalScore=5.9615374",4.0
+Plott Hounds,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8012617E-4,originalScore=5.8517046",3.0
+Kooikerhondje,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014763E-4,originalScore=5.836571",3.0
+Tyrannosaurus Rex,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.4164109,queryMatchMigratory=0.0,queryMatchText=1.8013903E-4,originalScore=5.8362103",0.0
+Vampire Bat,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.2340096,queryMatchMigratory=0.0,queryMatchText=1.801434E-4,originalScore=5.835989",0.0
+Hokkaido,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015775E-4,originalScore=5.8287373",0.0
+Saber Toothed Tiger,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.44968086,originalScore=5.8285623",0.0
+Muskrat,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.44968084,originalScore=5.828397",5.0
+Coyote,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015745E-4,originalScore=5.8203573",5.0
+Harp Seal,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.4171871,originalScore=5.8186793",3.0
+Cotton Top Tamarin,"queryMatchName=3.364737,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.4490908,originalScore=5.811798",5.0
+Double Doodle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015881E-4,originalScore=5.8048897",2.0
+Brown Headed Cowbird,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.1658113,queryMatchMigratory=0.0,queryMatchText=0.4161726,originalScore=5.803889",3.0
+Great White Shark,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.46694613,originalScore=5.7972016",0.0
+Deer,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.46063185,originalScore=5.7968016",4.0
+Zebu,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014721E-4,originalScore=5.3962007",5.0
+Macaque,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.4417654,queryMatchMigratory=0.0,queryMatchText=0.46774384,originalScore=5.3323164",5.0
+Lace Monitor,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.4831644,queryMatchMigratory=0.0,queryMatchText=0.44968086,originalScore=5.33029",3.0
+Collared Peccary,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.4490908,originalScore=5.3254786",5.0
+Mandrill,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.4710777,originalScore=5.3249187",5.0
+Korean Jindo,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8013704E-4,originalScore=5.2060285",5.0
+English Longhorn Cattle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014078E-4,originalScore=5.2026014",5.0
+Furrow Bee,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=0.46166742,originalScore=5.198336",3.0
