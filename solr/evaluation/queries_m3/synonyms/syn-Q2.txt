@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Peppered Moth",
+    "score": 2.905566
+  },
+  {
+    "Name": "Sea Dragon",
+    "score": 2.9030335
+  },
+  {
+    "Name": "Masked Angelfish",
+    "score": 2.8992796
+  },
+  {
+    "Name": "Orchid Dottyback",
+    "score": 2.899277
+  },
+  {
+    "Name": "Golden Masked Owl",
+    "score": 2.8987775
+  },
+  {
+    "Name": "Leaf Tailed Gecko",
+    "score": 2.8977165
+  },
+  {
+    "Name": "Decorator Crab",
+    "score": 2.8966823
+  },
+  {
+    "Name": "Underwing Moth",
+    "score": 2.8965118
+  },
+  {
+    "Name": "Tawny Frogmouth",
+    "score": 2.8928547
+  },
+  {
+    "Name": "Six Eyed Sand Spiders",
+    "score": 2.891831
+  },
+  {
+    "Name": "Sable Ferret",
+    "score": 2.8904831
+  },
+  {
+    "Name": "Nightjar",
+    "score": 2.8877745
+  },
+  {
+    "Name": "Flounder Fish",
+    "score": 2.8869824
+  },
+  {
+    "Name": "Purple Emperor",
+    "score": 2.8868148
+  },
+  {
+    "Name": "Stick Insect",
+    "score": 2.885345
+  },
+  {
+    "Name": "Treehopper",
+    "score": 2.8851588
+  },
+  {
+    "Name": "Masked Palm Civet",
+    "score": 2.8816698
+  },
+  {
+    "Name": "Common Yellowthroat",
+    "score": 2.881171
+  },
+  {
+    "Name": "Great Potoo Bird",
+    "score": 2.8806133
+  },
+  {
+    "Name": "African Tree Toad",
+    "score": 2.876442
+  },
+  {
+    "Name": "Katydid",
+    "score": 2.8761292
+  },
+  {
+    "Name": "Cuttlefish",
+    "score": 2.8759987
+  },
+  {
+    "Name": "Bobolink",
+    "score": 2.8759139
+  },
+  {
+    "Name": "Spiny Hill Turtle",
+    "score": 2.8753157
+  },
+  {
+    "Name": "Satanic Leaf Tailed Gecko",
+    "score": 2.8752189
+  },
+  {
+    "Name": "Leopard",
+    "score": 2.874877
+  },
+  {
+    "Name": "Seahorse",
+    "score": 2.874637
+  },
+  {
+    "Name": "Booby",
+    "score": 2.87255
+  },
+  {
+    "Name": "Mantella Frog",
+    "score": 2.8693326
+  },
+  {
+    "Name": "Northern Bobwhite",
+    "score": 2.8659606
+  }
+]
