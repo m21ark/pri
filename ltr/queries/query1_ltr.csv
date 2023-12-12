@@ -1,31 +1,31 @@
 Name,[features],score
-Afghan Hound,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.4237603,queryMatchMigratory=0.0,queryMatchText=1.8015745E-4,originalScore=37.868233",4.0
-Mal Shi,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014571E-4,originalScore=32.29295",0.0
-Beaski,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.6601987,queryMatchMigratory=0.0,queryMatchText=1.8015884E-4,originalScore=29.20628",5.0
-Bedlington Terrier,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.2340096,queryMatchMigratory=0.0,queryMatchText=1.801561E-4,originalScore=28.90858",4.0
-Miniature Pinscher,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015035E-4,originalScore=28.908579",4.0
-Maltese Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014912E-4,originalScore=28.908567",2.0
-Miniature Husky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015054E-4,originalScore=3.2834237",4.0
-Shiba Inu Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015305E-4,originalScore=3.283338",5.0
-Staffordshire Bull Terrier,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015203E-4,originalScore=3.282581",2.0
-Irish Setter,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8016063E-4,originalScore=3.2770407",5.0
-Keagle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.4096501,queryMatchMigratory=0.0,queryMatchText=1.8013385E-4,originalScore=3.261525",5.0
-Boxsky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.3897494,queryMatchMigratory=0.0,queryMatchText=1.801641E-4,originalScore=3.2610865",5.0
-Gerberian Shepsky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015072E-4,originalScore=3.2610571",3.0
-Boggle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.80155E-4,originalScore=3.260994",3.0
-Canaan Dog,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015906E-4,originalScore=3.2606509",5.0
-Gordon Setter,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8013557E-4,originalScore=3.2606373",5.0
-Pitsky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.6063626,queryMatchMigratory=0.0,queryMatchText=1.8015473E-4,originalScore=3.2606113",3.0
-Bluetick Coonhound,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.207109,queryMatchMigratory=0.0,queryMatchText=1.801548E-4,originalScore=3.2601647",5.0
-Boxer Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015978E-4,originalScore=3.2597384",5.0
-Beagle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8016089E-4,originalScore=3.2584074",5.0
-Pomeagle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.2340096,queryMatchMigratory=0.0,queryMatchText=1.8015063E-4,originalScore=3.2449908",5.0
-Boxweiler,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.1908836,queryMatchMigratory=0.0,queryMatchText=1.8014805E-4,originalScore=3.2449358",5.0
-Pyrenean Shepherd,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014129E-4,originalScore=3.2446606",3.0
-Belgian Sheepdog,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014412E-4,originalScore=3.244575",2.0
-Spanish Water Dog,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015371E-4,originalScore=3.2443163",3.0
-Shollie,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015435E-4,originalScore=3.243786",3.0
-Catahoula Leopard,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8015788E-4,originalScore=3.2437775",3.0
-Entlebucher Mountain Dog,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.3897494,queryMatchMigratory=0.0,queryMatchText=1.8015578E-4,originalScore=3.2437444",3.0
-Silver Labrador,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.3682864,queryMatchMigratory=0.0,queryMatchText=1.8014891E-4,originalScore=3.2431922",5.0
-Plott Hound Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=1.8014933E-4,originalScore=3.2431922",5.0
+Keagle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=3.622953,queryMatchMigratory=0.0,queryMatchText=5.7944894,originalScore=8.691734",5.0
+Nova Scotia Duck Tolling Retriever,"queryMatchName=2.7420187,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=6.804531,queryMatchMigratory=0.0,queryMatchText=5.6559587,originalScore=8.483938",5.0
+Wirehaired Vizsla,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.592811,originalScore=8.389216",5.0
+Beaski,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.544828,originalScore=8.317242",5.0
+English Foxhound,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=4.1125107,queryMatchMigratory=0.0,queryMatchText=5.5396934,originalScore=8.30954",5.0
+Pitsky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.9825163,queryMatchMigratory=0.0,queryMatchText=5.4566836,originalScore=8.185026",3.0
+Blue Picardy Spaniel,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.408512,originalScore=8.112768",5.0
+Ainu,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.8832673,queryMatchMigratory=0.0,queryMatchText=5.3943496,originalScore=8.091524",5.0
+Pointer Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.3816624,originalScore=8.072494",5.0
+Spanador,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.277225,originalScore=7.915838",5.0
+Labahoula,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=2.4496305,queryMatchMigratory=0.0,queryMatchText=5.2685533,originalScore=7.90283",5.0
+Azawakh,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.235448,originalScore=7.8531713",5.0
+Pitador,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=4.0866013,queryMatchMigratory=0.0,queryMatchText=5.188687,originalScore=7.78303",5.0
+Blue Lacy Dog,"queryMatchName=3.4102473,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.177629,originalScore=7.7664433",5.0
+Afghan Hound,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=10.021632,queryMatchMigratory=0.0,queryMatchText=5.1717935,originalScore=7.75769",5.0
+Dalmadoodle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=2.159968,queryMatchMigratory=0.0,queryMatchText=5.1588583,originalScore=7.738287",5.0
+Shollie,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.156592,originalScore=7.7348876",3.0
+American Eskimo Dog,"queryMatchName=3.4102473,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.7868949,queryMatchMigratory=0.0,queryMatchText=5.1440697,originalScore=7.716104",3.0
+Boxer Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=2.0688505,queryMatchMigratory=0.0,queryMatchText=5.115437,originalScore=7.6731553",4.0
+Cockalier,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=4.326821,queryMatchMigratory=0.0,queryMatchText=5.10824,originalScore=7.66236",5.0
+Comfort Retriever,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.0920978,originalScore=7.638147",5.0
+Petit Basset Griffon Vendeen,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=2.252774,queryMatchMigratory=0.0,queryMatchText=5.080774,originalScore=7.621161",5.0
+Shiba Inu Mix,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.0294213,originalScore=7.544132",2.0
+Vizsla,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.027271,originalScore=7.540906",5.0
+Poodle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.018788,originalScore=7.5281816",5.0
+Wire Fox Terrier,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=2.159968,queryMatchMigratory=0.0,queryMatchText=5.0090337,originalScore=7.5135503",5.0
+Yorkie Poo,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=5.0080395,originalScore=7.512059",1.0
+American Bulldog,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=1.829464,queryMatchMigratory=0.0,queryMatchText=5.006101,originalScore=7.5091515",5.0
+Shepadoodle,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=4.9945493,originalScore=7.491824",4.0
+Miniature Husky,"queryMatchName=0.0,queryMatchGenus=0.0,queryMatchClass=0.0,queryMatchOrigin=0.0,queryMatchFun_Fact=0.0,queryMatchMigratory=0.0,queryMatchText=4.961944,originalScore=7.442916",3.0
