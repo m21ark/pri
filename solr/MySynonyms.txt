@@ -20,4 +20,5 @@ camouflage, disguise, disguises, camouflaging, hide, mask
 walk, walked, wander, walking
 group, grouping, groups, pack, packs, grouping, groupings, herd, herds, herding, herde
 manage, deal, handle, treat
+migrate, migrated, migrating, migration, migrations, migratory, migrates, move, travel
 cannan, palestine
