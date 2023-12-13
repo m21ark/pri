@@ -1,7 +1,7 @@
 import json
 
-relevantAnimalsFile = 'nosyn_Q1-relevant.txt'
-retrievedAnimalsFile = 'nosyn_Q1.txt'
+relevantAnimalsFile = 'relevant.txt'
+retrievedAnimalsFile = 'retrieved.txt'
 
 
 file_path = retrievedAnimalsFile

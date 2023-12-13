@@ -1,0 +1,24 @@
+First retrieved animal of every query from V2 Edismax 
+
+1. Bluetick Coonhound - id: 10b3d677-4415-4a84-8db7-e6d9ff81f24a
+2. Cat Faced Spider   - id: d394ea2a-be83-4337-8989-af12341a1f2a
+3. Lawnmower Blenny   - id: 86e0b8b5-6cfe-4cfe-9fe0-ffdb14def375
+4. Olive Baboon       - id: fb40acbf-8567-4416-9412-0f42240effd4
+5. Mule Deer          - id: 2cc37a98-aeed-4c76-9531-17f40366913a
+
+Scale of comparison: 0 - 5
+0 - Nothing in common
+1 - Different type of animal and almost none similar features
+2 - Different type of animal and some similar features
+3 - Same type of animal and almost none similar features
+4 - Same type of animal and some similar features
+5 - Same type of animal and almost all the same features
+
+In the 4th one the results were bad, as some of them weren't 'like' baboons, but were instead preys
+- Case of boerboel, which is a dog breed, was used as protection from baboons
+
+1. 5,4,4,4,4,4,4,4,5,4
+2. 4,4,4,4,3,4,4,4,4,3
+3. 4,3,3,5,4,4,3,4,3,3
+4. 5,1,3,1,5,1,1,0,5,5
+5. 5,5,5,5,5,2,2,1,0,2

@@ -70,13 +70,13 @@
 
       // Function to move to the next card
       function next() {
-        currentIndex = (currentIndex + 1) % Math.ceil(items.length / 3);
+        currentIndex = (currentIndex + 1) % Math.ceil(items.length - 2);
         showCarousel();
       }
 
       // Function to move to the previous card
       function prev() {
-        currentIndex = (currentIndex - 1 + Math.ceil(items.length / 3)) % Math.ceil(items.length / 3);
+        currentIndex = (currentIndex - 1 + Math.ceil(items.length - 2)) % Math.ceil(items.length - 2);
         showCarousel();
       }
 
