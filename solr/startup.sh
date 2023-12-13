@@ -38,6 +38,9 @@ sleep 10
 echo "SCHEMA ..."
 echo "SYNONYM ..."
 SYNONYMS_FILE="/home/solr/MySynonyms.txt"
+
+cat /home/solr/MySynonyms.txt
+
 mv /home/solr/MySynonyms.txt  /var/solr/data/animals/conf/MySynonyms.txt
 
 
