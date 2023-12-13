@@ -12,4 +12,12 @@ america, americas, us, usa, mexico, canada, mexican, mexicans, north america
 animal, animals, beast, brute, creature, fauna
 like, love, fond of, enjoy, enjoys, delight, delights, loving, lovingly, loves, liked, liking, likable, fan
 eat, eating, feast, feed, feeding, prey, hunt, consume, ingest
+change, convert, exchange, replace, substitute, switch, shift
+color, colour, tint
+fur, skin, hide, pelt, fleece, pelage, pelages, pelts, skins, furs, hides, feather, feathers
+purpose, motive, aim, reason, goal, intention, objective, point, target, use, utility, usefulness, usefulnesses
+camouflage, disguise, disguises, camouflaging, hide, mask
+walk, walked, wander, walking
+group, grouping, groups, pack, packs, grouping, groupings, herd, herds, herding, herde
+manage, deal, handle, treat
 cannan, palestine
