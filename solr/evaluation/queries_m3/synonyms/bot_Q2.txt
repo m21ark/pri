@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Rainbow Grasshopper Dactylotum Bicolor",
+    "score": 9.624432
+  },
+  {
+    "Name": "Mexican Free Tailed Bat",
+    "score": 9.537325
+  },
+  {
+    "Name": "Western Tanager",
+    "score": 9.520645
+  },
+  {
+    "Name": "Cedar Waxwing",
+    "score": 9.5173
+  },
+  {
+    "Name": "American Dog Tick",
+    "score": 9.512307
+  },
+  {
+    "Name": "American Eel",
+    "score": 9.489089
+  },
+  {
+    "Name": "Admiral Butterfly",
+    "score": 9.424057
+  },
+  {
+    "Name": "Green Tree Frog",
+    "score": 9.412447
+  },
+  {
+    "Name": "Cardinal",
+    "score": 9.4028635
+  },
+  {
+    "Name": "Purple Gallinule",
+    "score": 9.395943
+  },
+  {
+    "Name": "Executioner Wasp",
+    "score": 9.376125
+  },
+  {
+    "Name": "White Crowned Sparrow",
+    "score": 9.361574
+  },
+  {
+    "Name": "Rufous Hummingbird",
+    "score": 9.359991
+  },
+  {
+    "Name": "Kissing Bugs",
+    "score": 9.348852
+  },
+  {
+    "Name": "Turkey",
+    "score": 9.336957
+  },
+  {
+    "Name": "Gray Catbird",
+    "score": 9.335403
+  },
+  {
+    "Name": "Mourning Warbler",
+    "score": 9.325622
+  },
+  {
+    "Name": "Asian Lady Beetle",
+    "score": 9.323662
+  },
+  {
+    "Name": "Summer Tanager",
+    "score": 9.303096
+  },
+  {
+    "Name": "Warbler",
+    "score": 9.297105
+  },
+  {
+    "Name": "White Eyed Vireo",
+    "score": 9.291288
+  },
+  {
+    "Name": "Hepatic Tanager Red Tanager",
+    "score": 9.290159
+  },
+  {
+    "Name": "Northern Parula",
+    "score": 9.285553
+  },
+  {
+    "Name": "Golden Tortoise Beetle",
+    "score": 9.2835045
+  },
+  {
+    "Name": "Least Flycatcher",
+    "score": 9.258041
+  },
+  {
+    "Name": "Mexican Mole Lizard",
+    "score": 9.227337
+  },
+  {
+    "Name": "Morpho Butterfly",
+    "score": 9.225654
+  },
+  {
+    "Name": "Chestnut Sided Warbler",
+    "score": 9.199767
+  },
+  {
+    "Name": "Dickcissel",
+    "score": 9.198722
+  },
+  {
+    "Name": "Yellowthroat",
+    "score": 9.189534
+  }
+]

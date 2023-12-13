@@ -14,14 +14,14 @@
   ],
   "params" : {
     "weights" : {
-      "queryMatchName" : 0.0,
+      "queryMatchName" : -0.41950315,
       "queryMatchGenus" : 0.0,
       "queryMatchClass" : 0.0,
-      "queryMatchOrigin" : 0.0,
-      "queryMatchFun_Fact" : 0.0,
-      "queryMatchMigratory" : 0.0,
-      "queryMatchText" : 0.0,
-      "originalScore" : 1.0
+      "queryMatchOrigin" : -0.42167284,
+      "queryMatchFun_Fact" : 0.16945207,
+      "queryMatchMigratory" : 0.4367062,
+      "queryMatchText" : 0.08357657,
+      "originalScore" : 0.08357656
     }
   }
 }
