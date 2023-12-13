@@ -19,3 +19,23 @@
   margin-left: 0px;
   margin-right: 10px;
 }
+
+
+
+#prev,
+#next {
+  background-color: #779eac;
+  color: #fff;
+  padding: 15px 25px; /* Increase padding to make the button larger */
+  border-radius: 50px; /* Increase border-radius to make the button rounder */
+  cursor: pointer;
+  border: none; /* Remove the default button border */
+  font-size: 16px; /* Increase font size */
+  transition: all 0.3s ease; /* Add a transition effect for hover state */
+}
+
+#prev:hover,
+#next:hover {
+  background-color: #a3d2e9; /* Change the background color on hover */
+  color: #000; /* Change the text color on hover */
+}
