@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Lawnmower Blenny",
+    "score": 4.9975085
+  },
+  {
+    "Name": "Orchid Dottyback",
+    "score": 4.9876347
+  },
+  {
+    "Name": "Cuttlefish",
+    "score": 4.986077
+  },
+  {
+    "Name": "Underwing Moth",
+    "score": 4.9591093
+  },
+  {
+    "Name": "Newt",
+    "score": 4.9507785
+  },
+  {
+    "Name": "Blue Tang",
+    "score": 4.914552
+  },
+  {
+    "Name": "Chameleon",
+    "score": 4.908926
+  },
+  {
+    "Name": "Mexican Alligator Lizard",
+    "score": 4.9069166
+  },
+  {
+    "Name": "Gray Tree Frog",
+    "score": 4.9044175
+  },
+  {
+    "Name": "Black Sea Bass",
+    "score": 4.885183
+  },
+  {
+    "Name": "Bearded Dragon",
+    "score": 4.873107
+  },
+  {
+    "Name": "Arctic Fox",
+    "score": 4.8722696
+  },
+  {
+    "Name": "Orange Crowned Warbler",
+    "score": 4.8680496
+  },
+  {
+    "Name": "Madagascar Tree Boa",
+    "score": 4.8662033
+  },
+  {
+    "Name": "Sable",
+    "score": 4.8534365
+  },
+  {
+    "Name": "Persian",
+    "score": 4.848134
+  },
+  {
+    "Name": "Green Anole",
+    "score": 4.8445287
+  },
+  {
+    "Name": "Sable Ferret",
+    "score": 4.8435845
+  },
+  {
+    "Name": "Bigfin Reef Squid",
+    "score": 4.843324
+  },
+  {
+    "Name": "Sea Bass",
+    "score": 4.8357615
+  },
+  {
+    "Name": "Squirrelfish",
+    "score": 4.8336506
+  },
+  {
+    "Name": "Vermilion Flycatcher",
+    "score": 4.832539
+  },
+  {
+    "Name": "Octopus",
+    "score": 4.8309555
+  },
+  {
+    "Name": "Smooth Earth Snake",
+    "score": 4.827817
+  },
+  {
+    "Name": "Mountain Lion",
+    "score": 4.824609
+  },
+  {
+    "Name": "Sockeye Salmon",
+    "score": 4.821166
+  },
+  {
+    "Name": "New Hampshire Red Chicken",
+    "score": 4.8203444
+  },
+  {
+    "Name": "Ground Snake",
+    "score": 4.814794
+  },
+  {
+    "Name": "Water Dragon",
+    "score": 4.8141317
+  },
+  {
+    "Name": "Thorny Devil",
+    "score": 4.8109074
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Collared Peccary",
+    "score": 9.113468
+  },
+  {
+    "Name": "Belgian Malinois",
+    "score": 9.078925
+  },
+  {
+    "Name": "Springbok",
+    "score": 8.9561405
+  },
+  {
+    "Name": "Korean Jindo",
+    "score": 8.814006
+  },
+  {
+    "Name": "Agama Lizard",
+    "score": 8.799694
+  },
+  {
+    "Name": "Dutch Shepherd",
+    "score": 8.770932
+  },
+  {
+    "Name": "Mongoose",
+    "score": 8.610716
+  },
+  {
+    "Name": "Highland Cattle",
+    "score": 8.418313
+  },
+  {
+    "Name": "Rhesus Macaque",
+    "score": 8.388093
+  },
+  {
+    "Name": "Husky",
+    "score": 8.2755375
+  },
+  {
+    "Name": "Olive Baboon",
+    "score": 8.086337
+  },
+  {
+    "Name": "Hokkaido",
+    "score": 8.046009
+  },
+  {
+    "Name": "White German Shepherd 2",
+    "score": 7.9330187
+  },
+  {
+    "Name": "Woolly Monkey",
+    "score": 7.9271846
+  },
+  {
+    "Name": "Saber Toothed Tiger",
+    "score": 7.8227286
+  },
+  {
+    "Name": "Double Doodle",
+    "score": 7.749985
+  },
+  {
+    "Name": "Harris Hawk",
+    "score": 7.7277536
+  },
+  {
+    "Name": "Coyote",
+    "score": 7.6971226
+  },
+  {
+    "Name": "Deer",
+    "score": 7.6576753
+  },
+  {
+    "Name": "Dik Dik",
+    "score": 7.6533794
+  },
+  {
+    "Name": "Harp Seal",
+    "score": 7.6415544
+  },
+  {
+    "Name": "Macaque",
+    "score": 7.60953
+  },
+  {
+    "Name": "Zebu",
+    "score": 7.592541
+  },
+  {
+    "Name": "Giraffe",
+    "score": 7.5200534
+  },
+  {
+    "Name": "Cotton Top Tamarin",
+    "score": 7.4963684
+  },
+  {
+    "Name": "Mandrill",
+    "score": 7.4635572
+  },
+  {
+    "Name": "Briard",
+    "score": 7.4470167
+  },
+  {
+    "Name": "Lace Monitor",
+    "score": 7.2912765
+  },
+  {
+    "Name": "Crab Eating Macaque",
+    "score": 7.215036
+  },
+  {
+    "Name": "Goat",
+    "score": 7.0778985
+  }
+]
