@@ -1,30 +1,122 @@
-[{'Name': 'Beaski', 'score': 7.910223}, 
-{'Name': 'Beago', 'score': 7.84818}, 
-{'Name': 'Nova Scotia Duck Tolling Retriever', 'score': 7.8369308}, 
-{'Name': 'Gerberian Shepsky', 'score': 7.831289}, 
-{'Name': 'Bluetick Coonhound', 'score': 7.794744}, 
-{'Name': 'Keagle', 'score': 7.774128}, 
-{'Name': 'Basenji Mix', 'score': 7.7704144}, 
-{'Name': 'Pomeagle', 'score': 7.7587333}, 
-{'Name': 'Wirehaired Vizsla', 'score': 7.7546496}, 
-{'Name': 'Jagdterrier', 'score': 7.7461658}, 
-{'Name': 'Lagotto Romagnolo', 'score': 7.7397766}, 
-{'Name': 'Harrier', 'score': 7.7362514}, 
-{'Name': 'Poodle', 'score': 7.726532}, 
-{'Name': 'English Pointer', 'score': 7.691656}, 
-{'Name': 'English Foxhound', 'score': 7.690819}, 
-{'Name': 'Australian Terrier', 'score': 7.688}, 
-{'Name': 'Yorkie Poo', 'score': 7.677414}, 
-{'Name': 'Swedish Elkhound', 'score': 7.6732144}, 
-{'Name': 'Jack Chi', 'score': 7.669779}, 
-{'Name': 'Pitsky', 'score': 7.6473484}, 
-{'Name': 'Shiba Inu Mix', 'score': 7.61296}, 
-{'Name': 'Texas Heeler', 'score': 7.6129436}, 
-{'Name': 'Maltipom', 'score': 7.6092734}, 
-{'Name': 'Plott Hound Mix', 'score': 7.6010566}, 
-{'Name': 'Shollie', 'score': 7.5968328}, 
-{'Name': 'Aussiedor', 'score': 7.595842}, 
-{'Name': 'Wire Fox Terrier', 'score': 7.5918946}, 
-{'Name': 'Silver Labrador', 'score': 7.58989}, 
-{'Name': 'Shikoku', 'score': 7.588979}, 
-{'Name': 'Polish Lowland Sheepdog', 'score': 7.5859365}]
+[
+  {
+    "Name": "Beaski",
+    "score": 7.910223
+  },
+  {
+    "Name": "Beago",
+    "score": 7.84818
+  },
+  {
+    "Name": "Nova Scotia Duck Tolling Retriever",
+    "score": 7.8369308
+  },
+  {
+    "Name": "Gerberian Shepsky",
+    "score": 7.831289
+  },
+  {
+    "Name": "Bluetick Coonhound",
+    "score": 7.794744
+  },
+  {
+    "Name": "Keagle",
+    "score": 7.774128
+  },
+  {
+    "Name": "Basenji Mix",
+    "score": 7.7704144
+  },
+  {
+    "Name": "Pomeagle",
+    "score": 7.7587333
+  },
+  {
+    "Name": "Wirehaired Vizsla",
+    "score": 7.7546496
+  },
+  {
+    "Name": "Jagdterrier",
+    "score": 7.7461658
+  },
+  {
+    "Name": "Lagotto Romagnolo",
+    "score": 7.7397766
+  },
+  {
+    "Name": "Harrier",
+    "score": 7.7362514
+  },
+  {
+    "Name": "Poodle",
+    "score": 7.726532
+  },
+  {
+    "Name": "English Pointer",
+    "score": 7.691656
+  },
+  {
+    "Name": "English Foxhound",
+    "score": 7.690819
+  },
+  {
+    "Name": "Australian Terrier",
+    "score": 7.688
+  },
+  {
+    "Name": "Yorkie Poo",
+    "score": 7.677414
+  },
+  {
+    "Name": "Swedish Elkhound",
+    "score": 7.6732144
+  },
+  {
+    "Name": "Jack Chi",
+    "score": 7.669779
+  },
+  {
+    "Name": "Pitsky",
+    "score": 7.6473484
+  },
+  {
+    "Name": "Shiba Inu Mix",
+    "score": 7.61296
+  },
+  {
+    "Name": "Texas Heeler",
+    "score": 7.6129436
+  },
+  {
+    "Name": "Maltipom",
+    "score": 7.6092734
+  },
+  {
+    "Name": "Plott Hound Mix",
+    "score": 7.6010566
+  },
+  {
+    "Name": "Shollie",
+    "score": 7.5968328
+  },
+  {
+    "Name": "Aussiedor",
+    "score": 7.595842
+  },
+  {
+    "Name": "Wire Fox Terrier",
+    "score": 7.5918946
+  },
+  {
+    "Name": "Silver Labrador",
+    "score": 7.58989
+  },
+  {
+    "Name": "Shikoku",
+    "score": 7.588979
+  },
+  {
+    "Name": "Polish Lowland Sheepdog",
+    "score": 7.5859365
+  }
+]
