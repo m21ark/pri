@@ -2,6 +2,15 @@
 
 This repository contains the code and documentation for developing an information retrieval system focused on animal data using **Apache Solr**.
 
+See the final [Project Report](docs/report-43.pdf) or the presentation [Slides](docs/demo-43.pdf) for a comprehensive overview of the project.
+
+Alternatively, you can see the project video for a visual demonstration of the system in action and a summary of our performed work:
+
+[![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Xkl5ndOLY6U)
+
+![.](docs/image1.png)
+![.](docs/image2.png)
+
 ## Project Overview
 
 - **Objective:** To create an effective information retrieval system for animal data by leveraging Apache Solr.
